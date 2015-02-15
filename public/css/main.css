@@ -1,0 +1,373 @@
+/* === Initial === */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a {
+    outline: none !important;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* === Helper classes === */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* === Softbeehive === */
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+
+/* = Arctic ocean = */
+
+.arctic-ocean {
+    padding: 60px 0;
+}
+
+.softbeehive {
+    margin: 0;
+}
+
+.softbeehive a,
+.softbeehive a:focus,
+.softbeehive a:active,
+.softbeehive a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+
+.softbeehive .logo {
+    width: 160px;
+}
+
+.colossus-nav {
+    float: right;
+}
+
+ul.colossus-ul {
+    padding: 0;
+}
+
+ul.colossus-ul > li {
+    display: block;
+    float: left;
+    margin: 0 20px;
+}
+
+ul.colossus-ul > li:last-child {
+    margin-right: 0;
+}
+
+ul.colossus-ul > li:hover,
+ul.colossus-ul > li:focus,
+ul.colossus-ul > li:active {
+    border-bottom: 2px solid #0E578C;
+}
+
+ul.colossus-ul > li > a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #0E578C;
+    text-decoration: none;
+}
+
+/* I do */
+
+.i-do {
+    position: relative;
+    color: #FFFFFF;
+}
+
+.h-to {
+    background: #2A69B8;
+    background: -webkit-linear-gradient(135deg, #147ECC, #2A69B8);
+    background: linear-gradient(-45deg, #147ECC, #2A69B8);
+    padding: 123px 0 150px;
+    text-align: center;
+}
+
+.a-to {
+    background: #0BC0E3;
+    background: -webkit-linear-gradient(135deg, #147ECC, #2A69B8);
+    background: linear-gradient(-45deg, #147ECC, #2A69B8);
+    padding: 20px 0;
+}
+
+/* = Hexagon = */
+
+.hex-item {
+    width: 60px;
+    height: 52px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.hexagon {
+    width: 60px;
+    height: 52px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hexagon-inner {
+    position: relative;
+    width: 60px;
+    height: 52px;
+    background: #2A69B8;
+    background: -webkit-linear-gradient(330deg, #FFFFFF 50%, #2A69B8 50%);
+    background: linear-gradient(120deg, #FFFFFF 50%, #2A69B8 50%);
+    -webkit-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.hexagon-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -13px;
+    margin-left: -2px;
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+.uniter-b {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+    margin-bottom: -26px;
+}
+
+/* = Atlantic ocean = */
+
+.atlantic-ocean {
+    position: relative;
+}
+
+/* = Terra du content = */
+
+.island {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.terra {
+    padding: 30px 0;
+}
+
+/* = Pacific ocean = */
+
+.pacific-ocean {
+    background: #F0F0F0;
+}
+
+/* = Southern ocean = */
+
+.southern-ocean {
+    background: #222222;
+    color: #FFFFFF;
+}
+
+.southern-ocean .island {
+    padding: 16px 0;
+}
+
+.hemi {
+    width: 50%;
+    float: left;
+}
+
+.timeframe {
+    margin-right: 5px;
+}
+
+ul.hubs {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+ul.hubs li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+/* = Sticky footer = */
+
+.united {
+    min-height: 100%;
+    margin-bottom: -64px;
+}
+
+.united:after {
+    content: "";
+    display: block;
+}
+
+.southern-ocean, 
+.united:after {
+    height: 64px;
+}
+
+
+/* = Medium screen, IE fixes = */
+
+@media only screen and (min-width: 480px) {
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+/* = Standart screen = */
+
+@media only screen and (min-width: 768px) {
+
+    .softbeehive {
+        float: left;
+    }
+
+    .softbeehive .mcapt {
+        display: block;
+        padding-top: 10px;
+        font-size: 27px;
+    }
+}
+
+/* = Wide screen = */
+
+@media only screen and (min-width: 1280px) {
+
+    .island {
+        width: 1152px; /* 1280px - 10% for margins */
+        margin: 0 auto;
+    }
+}

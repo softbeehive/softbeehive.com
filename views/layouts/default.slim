@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    title Softbeehive - 
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    link rel="stylesheet" href="/css/normalize.min.css"
+    link rel="stylesheet" href="/css/main.css"
+  body
+    .united
+      .arctic-ocean
+        header.island.clearfix
+
+          h1.softbeehive
+            a href="/" title="Softbeehive"
+              img.logo src="/img/logos/logo.svg" alt="Softbeehive"
+              span.mcapt Softbeehive
+
+          nav.colossus-nav
+            ul.colossus-ul
+              li
+                a href="/works" Works
+              li
+                a href="/about" About
+              li
+                a href="/contact" Contact
+              li
+                a href="https://github.com/softbeehive"
+                  img src="img/logos/github32-b.png"
+      
+      == yield
+
+    .southern-ocean.clearfix
+      footer.island
+        .hemi 
+          span.timeframe &copy; 2008 - #{Date.today.strftime("%Y")} 
+          span Softbeehive
