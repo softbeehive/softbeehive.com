@@ -1,0 +1,22 @@
+.work-unit {
+
+}
+
+.desktop-browser {
+  border: 2px solid $grey4;
+  border-radius: 5px;
+
+  ul.controls {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      vertical-align: middle;
+      margin-right: 8px;
+      background-color: $grey4;
+      border-radius: 50%;
+    }
+  }
+}

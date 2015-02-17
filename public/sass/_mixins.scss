@@ -1,0 +1,43 @@
+// Transform
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+// Transform Origin
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+// Box Shadow
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+// Transition
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
+
+// Transition Duration
+@mixin transition-duration($duration) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  transition: $duration;
+}
+
+// Background linear gradient
+@mixin linear-gradient($angle, $end, $start) {
+  background: -webkit-linear-gradient($angle + 180, $end, $start);
+  background: -moz-linear-gradient($angle, $end, $start);
+  background: linear-gradient($angle, $end, $start);
+}
