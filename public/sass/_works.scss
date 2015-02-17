@@ -1,13 +1,24 @@
 .work-unit {
-
+  margin-top: 20px;
 }
 
 .desktop-browser {
   border: 2px solid $grey4;
   border-radius: 5px;
+  
+  @media screen and (min-width: 768px) {
+    width: 65%;
+  }
+
+  .browser-top {
+    border-bottom: 2px solid $grey4;
+  }
 
   ul.controls {
+    float: left;
     list-style: none;
+    padding: 0 10px;
+    line-height: 44px;
 
     li {
       display: inline-block;
@@ -17,6 +28,21 @@
       margin-right: 8px;
       background-color: $grey4;
       border-radius: 50%;
+    }
+  }
+
+  .address-bar {
+    margin: 7px 7px 7px 80px;
+    padding: 0 7px;
+    border: 2px solid $grey4;
+    border-radius: 3px;
+    color: $grey5;
+    font-size: 15px;
+  }
+
+  .browser-body {
+    img {
+      width: 100%;
     }
   }
 }
