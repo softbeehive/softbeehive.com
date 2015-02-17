@@ -66,7 +66,7 @@ ul.colossus-ul {
     margin: 0 20px;
 
     &:hover {
-      border-bottom: 2px solid $blue-link;
+      border-bottom: 2px solid $blue-link-hover;
     }
 
     &:last-child {
@@ -76,7 +76,6 @@ ul.colossus-ul {
     a {
       font-size: 18px;
       line-height: 28px;
-      color: $blue-link;
       text-decoration: none;
     }
   }
@@ -116,7 +115,7 @@ ul.colossus-ul {
 }
 
 .terra {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 /* = Pacific ocean = */

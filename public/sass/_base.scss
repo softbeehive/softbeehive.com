@@ -31,7 +31,12 @@ hr {
 }
 
 a {
+  color: $blue-link;
   outline: none !important;
+
+  &:hover {
+    color: $blue-link-hover;
+  }
 }
 
 audio,
