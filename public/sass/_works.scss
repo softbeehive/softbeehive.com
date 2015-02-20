@@ -5,9 +5,11 @@
 .desktop-browser {
   border: 2px solid $grey4;
   border-radius: 5px;
+  box-sizing: border-box;
   
   @media screen and (min-width: 768px) {
     width: 65%;
+    float: left;
   }
 
   .browser-top {
@@ -44,5 +46,15 @@
     img {
       width: 100%;
     }
+  }
+}
+
+.card {
+  box-sizing: border-box;
+
+  @media screen and (min-width: 768px) {
+    width: 35%;
+    float: left;
+    padding-left: 60px;
   }
 }

@@ -20,7 +20,11 @@ body {
 /* = Arctic ocean = */
 
 .arctic-ocean {
-  padding: 60px 0;
+  padding: 40px 0;
+
+  .island {
+    position: relative;
+  }
 }
 
 .softbeehive {
@@ -39,14 +43,15 @@ body {
   }
 
   .logo {
-    width: 160px;
+    width: 140px;
   }
 
   .mcapt {
     @media screen and (min-width: 768px) {
       display: block;
       padding-top: 10px;
-      font-size: 27px;
+      padding-bottom: 10px;
+      font-size: 25px;
     }
   }
 }
@@ -54,15 +59,18 @@ body {
 /* = Nav = */
 
 .colossus-nav {
-  float: right;
+  @media screen and (min-width:768px) {
+    margin-left: 145px;
+    text-align: right;
+  }
+
 }
 
 ul.colossus-ul {
   padding: 0;
 
   li {
-    display: block;
-    float: left;
+    display: inline-block;
     margin: 0 20px;
 
     &:hover {
