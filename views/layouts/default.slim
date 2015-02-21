@@ -8,6 +8,7 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
     link rel="stylesheet" href="/css/normalize.min.css"
     link rel="stylesheet" href="/css/main.css"
+    script src="/js/helpers/svgzee.min.js"
   body
     .united
       .arctic-ocean
@@ -18,7 +19,7 @@ html
               img.logo src="/img/logos/logo.svg" alt="Softbeehive"
               span.mcapt Softbeehive
 
-          div.colossus-nav
+          .colossus-nav
             ul.colossus-ul
               li
                 a href="/works" Works
@@ -26,9 +27,10 @@ html
                 a href="/about" About
               li
                 a href="/contact" Contact
-              li
-                a.github href="https://github.com/softbeehive"
+              li.github
+                a href="https://github.com/softbeehive"
                   img src="img/logos/github32-b.png"
+          .aligner
       
       == yield
 
@@ -37,3 +39,4 @@ html
         .hemi 
           span.timeframe &copy; 2008 - #{Date.today.strftime("%Y")} 
           span Softbeehive
+    script src="/js/main.js"
