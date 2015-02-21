@@ -10,30 +10,33 @@
 .hexagon {
   width: 60px;
   height: 52px;
-  -webkit-transform: rotate(-60deg);
-  transform: rotate(-60deg);
   overflow: hidden;
+  @include transform(rotate(-60deg));
 }
 
 .hexagon-inner {
   position: relative;
   width: 60px;
   height: 52px;
-  background: #2A69B8;
-  background: -webkit-linear-gradient(330deg, #FFFFFF 50%, #2A69B8 50%);
-  background: linear-gradient(120deg, #FFFFFF 50%, #2A69B8 50%);
-  -webkit-transform: rotate(120deg);
-  transform: rotate(120deg);
+  background: $blue-start;
+  @include linear-gradient(120deg, white 50%, $blue-start 50%);
+  @include transform(rotate(120deg));
 }
 
-.hexagon-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -13px;
-  margin-left: -2px;
-  -webkit-transform: rotate(-60deg);
-  transform: rotate(-60deg);
+.hexagon-helper {
+  &.teal {
+    .hexagon-inner {
+      background: $teal;
+      @include linear-gradient(120deg, white 50%, $teal 50%);
+    }
+  }
+
+  &.blue-alt {
+    .hexagon-inner {
+      background: $blue-alt;
+      @include linear-gradient(120deg, white 50%, $blue-alt 50%);
+    }
+  }
 }
 
 .uniter-b {

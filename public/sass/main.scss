@@ -13,14 +13,14 @@ body {
 }
 
 body {
-  font: 16px/26px "Helvetica", "Helvetica Neue", "Arial";
+  font: 16px/26px "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 
 /* = Arctic ocean = */
 
 .arctic-ocean {
-  padding: 40px 0;
+  padding: 30px 0;
 
   .island {
     position: relative;
@@ -44,6 +44,7 @@ body {
 
   .logo {
     width: 140px;
+    height: 140px;
   }
 
   .mcapt {
@@ -60,14 +61,21 @@ body {
 
 .colossus-nav {
   @media screen and (min-width:768px) {
+    position: absolute;
+    margin-top: -16px;
     margin-left: 145px;
     text-align: right;
+    top: 50%;
+    right: 0;
+    left: 0;
   }
 
 }
 
 ul.colossus-ul {
   padding: 0;
+  display: inline-block;
+  vertical-align: middle;
 
   li {
     display: inline-block;
@@ -75,6 +83,10 @@ ul.colossus-ul {
 
     &:hover {
       border-bottom: 2px solid $blue-link-hover;
+
+      &.github {
+        border-bottom: none;
+      }
     }
 
     &:last-child {
@@ -94,13 +106,31 @@ ul.colossus-ul {
 .i-do {
   position: relative;
   color: white;
-}
-
-.h-to {
-  background: $blue-start;
-  @include linear-gradient(-45deg, $blue-end, $blue-start);
-  padding: 123px 0 150px;
+  background-color: $blue-start;
+  padding: 70px 0;
   text-align: center;
+
+  &.blue-grad {
+    @include linear-gradient(-45deg, $blue-end, $blue-start);
+  }
+
+  &.teal-bg {
+    background-color: $teal;
+  }
+
+  &.blue-alt-bg {
+    background-color: $blue-alt;
+  }
+
+  h1 {
+    padding-bottom: 15px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba($grey7, 0.4);
+  }
+
+  .larisa {
+    margin-bottom: 10px;
+  }
 }
 
 /* = Atlantic ocean = */
