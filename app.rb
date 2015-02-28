@@ -8,27 +8,23 @@ module Softbeehive
     
     configure :development do
       register Sinatra::Reloader
-    end
 
-    configure do
       set :slim, :layout => :"layouts/default"
       set :bind, "0.0.0.0"
     end
+
+    before { request.path_info.sub! %r{/$}, '' }
 
     get "/" do
       slim :index
     end
 
-    get "/works" do 
-      slim :works
+    get "/:section" do 
+      slim :"#{params[:section]}"
     end
 
-    get "/about" do 
-      slim :about
-    end
-
-    get "/contact" do 
-      slim :contact
+    get "/:section/:name" do
+      slim :"#{params[:section]}/#{params[:name]}"
     end
 
   end
