@@ -1,7 +1,8 @@
+@import "mixins";
 @import "colors";
 @import "base";
 @import "helpers";
-@import "mixins";
+@import "buttons";
 @import "works";
 @import "hexagon";
 
@@ -89,6 +90,12 @@ ul.colossus-ul {
       }
     }
 
+    .fa-github {
+      color: $grey7;
+      font-size: 28px;
+      vertical-align: middle;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -139,6 +146,17 @@ ul.colossus-ul {
   position: relative;
 }
 
+.projects {
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    + p.subtitle {
+      margin-top: 5px;
+    }
+  }
+}
+
 /* = Terra du content = */
 
 .island {
@@ -153,7 +171,7 @@ ul.colossus-ul {
 }
 
 .terra {
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 /* = Pacific ocean = */

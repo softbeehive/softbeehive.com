@@ -33,6 +33,7 @@ hr {
 a {
   color: $blue-link;
   outline: none !important;
+  text-decoration: none;
 
   &:hover {
     color: $blue-link-hover;
