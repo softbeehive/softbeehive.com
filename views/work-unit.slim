@@ -1,42 +1,24 @@
-.work-unit.clearfix
-  .desktop-browser
-    .browser-top.clearfix
-      ul.controls
-        li &nbsp;
-        li &nbsp;
-        li &nbsp;
-      .address-bar www.identity.com
-    .browser-body
-      img src="/img/1-identity.jpg"
-  .card
-    h2 Identity.com
-    p.subtitle on behalf of Inflection
-    p Identity.com is an identity management tool that helps people control their personal data and manage their credibility online.
-    p 
-      a href="http://identity.com" target="_blank"
-        i.fa.fa-external-link &nbsp;
-        | Visit website
-    p Ruby on Rails, RSpec, Backbone, jQuery, Sass, Vagrant, Linux, Git
-    p May 2014 - present
-    a.btn.primary.block href="/projects/identity" View project
-
-.work-unit
-  .desktop-browser
-    .browser-top.clearfix
-      ul.controls
-        li &nbsp;
-        li &nbsp;
-        li &nbsp;
-      .address-bar www.adventum.at
-    .browser-body
-      img src="/img/2-adventum.jpg"
-  .card
-    h2 Adventum Sprachinstitut
-    p ...
-    p 
-      a href="http://adventum.at" target="_blank"
-        i.fa.fa-external-link &nbsp;
-        | Visit website
-    p Zend Framework 2, jQuery, Twitter Bootstrap 3, Sass, Graphic Design, Linux, Git
-    p April 2014
-    a.btn.primary.block href="/projects/adventum" View project
+- data_array.each do |w|
+  .work-unit.clearfix
+    .desktop-browser
+      .browser-top.clearfix
+        ul.controls
+          li &nbsp;
+          li &nbsp;
+          li &nbsp;
+        .address-bar =w[:url]
+      .browser-body
+        img src="/img/projects/#{w[:slug]}.jpg"
+    .card
+      h2 =w[:name]
+      - if w.has_key?(:subtitle)
+        p.subtitle =w[:subtitle]
+      p =w[:desc]
+      p
+        - if w.has_key?(:url)
+          a href="http://#{w[:url]}" target="_blank"
+            i.fa.fa-external-link &nbsp;
+            | Visit website
+      p =w[:softstack]
+      p =w[:chronos]
+      a.btn.primary.block href="/projects/#{w[:slug]}" View project
