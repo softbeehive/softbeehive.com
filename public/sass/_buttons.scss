@@ -5,7 +5,7 @@
   padding: 10px;
   text-align: center;
   border-radius: 3px;
-  @include transition(all 0.4s ease-in-out);
+  @include transition(all 0.3s ease-in-out);
 
   &.primary {
     color: darken($blue-alt, 10%);
