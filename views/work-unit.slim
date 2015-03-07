@@ -6,9 +6,9 @@
           li &nbsp;
           li &nbsp;
           li &nbsp;
-        .address-bar =w[:url]
+        .address-bar =w[:url] || "about:history"
       .browser-body
-        img src="/img/projects/#{w[:slug]}.jpg"
+        img src="/img/projects/#{w[:slug]}.webp" srcset="/img/projects/#{w[:slug]}-2x.webp 1.5x" onerror="this.onerror=null; this.src='/img/projects/#{w[:slug]}.jpg'; this.srcset='/img/projects/#{w[:slug]}-2x.jpg 1.5x'"
     .card
       h2 =w[:name]
       - if w.has_key?(:subtitle)
