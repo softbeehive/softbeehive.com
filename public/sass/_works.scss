@@ -1,3 +1,18 @@
+.projects {
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    + p.subtitle {
+      margin-top: 5px;
+    }
+  }
+
+  .terra {
+    padding-bottom: 0;
+  }
+}
+
 .work-unit {
   margin-bottom: 60px;
 }
@@ -56,5 +71,9 @@
     width: 35%;
     float: left;
     padding-left: 60px;
+  }
+
+  .fa-external-link {
+    vertical-align: middle;
   }
 }

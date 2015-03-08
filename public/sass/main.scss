@@ -4,6 +4,7 @@
 @import "helpers";
 @import "buttons";
 @import "works";
+@import "contact";
 @import "hexagon";
 
 /* === Softbeehive === */
@@ -146,17 +147,6 @@ ul.colossus-ul {
   position: relative;
 }
 
-.projects {
-  h2 {
-    margin-top: 10px;
-    margin-bottom: 0;
-
-    + p.subtitle {
-      margin-top: 5px;
-    }
-  }
-}
-
 /* = Terra du content = */
 
 .island {
@@ -185,32 +175,15 @@ ul.colossus-ul {
 .southern-ocean {
   background: $grey8;
   color: white;
-
-  .island {
-    padding: 16px 0;
-  }
 }
 
-/* = Footer = */
-
-.hemi {
-  width: 50%;
-  float: left;
+footer {
+  line-height: 24px;
+  padding: 20px 0;
 }
 
 .timeframe {
   margin-right: 5px;
-}
-
-ul.hubs {
-  float: right;
-  margin: 0;
-  padding: 0;
-
-  li {
-    display: inline-block;
-    margin-left: 8px;
-  }
 }
 
 /* = Sticky footer = */
