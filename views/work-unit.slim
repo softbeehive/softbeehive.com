@@ -8,7 +8,7 @@
           li &nbsp;
         .address-bar =w[:url] || "about:history"
       .browser-body
-        img src="/img/projects/#{w[:slug]}.webp" srcset="/img/projects/#{w[:slug]}-2x.webp 2x" onerror="this.onerror=null; this.src='/img/projects/#{w[:slug]}.jpg'; this.srcset='/img/projects/#{w[:slug]}-2x.jpg 2x'"
+        img src="/img/projects/#{w[:slug]}.webp" srcset="/img/projects/#{w[:slug]}-2x.webp 2x" onerror="this.onerror=null; this.src='/img/projects/#{w[:slug]}.#{w[:ext] || "jpg"}'; this.srcset='/img/projects/#{w[:slug]}-2x.#{w[:ext] || "jpg"} 2x'"
     .card
       h2 =w[:name]
       - if w.has_key?(:subtitle)
