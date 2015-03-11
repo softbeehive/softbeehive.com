@@ -14,23 +14,21 @@ html
     .united
       .arctic-ocean
         .island.clearfix
-
           h1.softbeehive
             a href="/" title="Softbeehive"
               img.logo src="/img/logos/logo.svg" alt="Softbeehive"
               span.mcapt Softbeehive
-
           .colossus-nav
             ul.colossus-ul
-              li
+              li class=(request.path_info == "" ? "active" : "")
                 a href="/" Projects
-              li
-                a href="/about" About
-              li
-                a href="/contact" Contact
+              - menu = [{:route => "/about", :name => "About"}, {:route => "/contact", :name => "Contact"}]
+              - menu.each do |item|
+                li class=(request.path_info == item[:route] ? "active" : "")
+                  a href="#{item[:route]}" #{item[:name]}
               li.github
                 a href="https://github.com/softbeehive"
-                  i.fa.fa-github
+                    i.fa.fa-github
           .aligner
       
       == yield

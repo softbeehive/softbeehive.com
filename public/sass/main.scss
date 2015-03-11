@@ -91,6 +91,14 @@ ul.colossus-ul {
       }
     }
 
+    &.active {
+      border-bottom: 2px solid $blue-link-hover;
+      
+      a {
+        color: $blue-link-hover;
+      }
+    }
+
     .fa-github {
       color: $grey7;
       font-size: 28px;
