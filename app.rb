@@ -25,7 +25,7 @@ module Softbeehive
     end
 
     get "/projects/:name" do
-      slim :"projects/#{params[:name]}"
+      slim :"projects/details"
     end
 
     get "/about" do
@@ -34,6 +34,11 @@ module Softbeehive
 
     get "/contact" do
       slim :contact
+    end
+
+    def selectProject(key)
+      @kev = data_array.detect {|k, v| k[:"#{key}"]}
+      return @kev[:"#{key}"]
     end
 
     require_relative "src/data"

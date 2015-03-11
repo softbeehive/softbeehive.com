@@ -1,4 +1,5 @@
 - data_array.each do |w|
+  - key, prdata = w.first
   .work-unit.clearfix
     .desktop-browser
       .browser-top.clearfix
@@ -6,19 +7,19 @@
           li &nbsp;
           li &nbsp;
           li &nbsp;
-        .address-bar =w[:url] || "about:history"
+        .address-bar =prdata[:url] || "about:history"
       .browser-body
-        img src="/img/projects/#{w[:slug]}.webp" srcset="/img/projects/#{w[:slug]}-2x.webp 2x" onerror="this.onerror=null; this.src='/img/projects/#{w[:slug]}.#{w[:ext] || "jpg"}'; this.srcset='/img/projects/#{w[:slug]}-2x.#{w[:ext] || "jpg"} 2x'"
+        img src="/img/projects/#{prdata[:slug]}.webp" srcset="/img/projects/#{prdata[:slug]}-2x.webp 2x" onerror="this.onerror=null; this.src='/img/projects/#{prdata[:slug]}.#{prdata[:ext] || "jpg"}'; this.srcset='/img/projects/#{prdata[:slug]}-2x.#{prdata[:ext] || "jpg"} 2x'"
     .card
-      h2 =w[:name]
+      h2 =prdata[:name]
       - if w.has_key?(:subtitle)
-        p.subtitle =w[:subtitle]
-      p =w[:desc]
+        p.subtitle =prdata[:subtitle]
+      p =prdata[:desc]
       p
         - if w.has_key?(:url)
-          a href="http://#{w[:url]}" target="_blank"
+          a href="http://#{prdata[:url]}" target="_blank"
             i.fa.fa-external-link &nbsp;
             | Visit website
-      p =w[:softstack]
-      p =w[:chronos]
-      a.btn.primary.block href="/projects/#{w[:slug]}" View project
+      p =prdata[:softstack]
+      p =prdata[:chronos]
+      a.btn.primary.block href="/projects/#{prdata[:slug]}" View project
