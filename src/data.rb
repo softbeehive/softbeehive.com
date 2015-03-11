@@ -61,7 +61,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "...",
           :slug => "inevention",
-          :softstack => "PHP, Slim Framework, MongoDB, JavaScript, jQuery, Solr, CentOS, Subversion",
+          :softstack => "PHP, Slim Framework, MongoDB, JavaScript, jQuery, Solr, Twitter Bootstrap 2, CentOS, Subversion",
           :chronos => "February 2013 - October 2013",
           :ext => "png"
         }
