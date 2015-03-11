@@ -3,3 +3,24 @@
   h1 = project[:name]
   .hexagon-helper.blue-alt 
     include ../hexagon
+
+.atlantic-ocean
+  .terra.island
+    .project-unit
+      .columns
+        .story-unit.half 
+          h4 My Impact
+          = project[:story]
+        .half 
+          h4 Software Stack
+          = project[:softstack]
+
+      .desktop-browser
+        .browser-top.clearfix
+          ul.controls
+            li &nbsp;
+            li &nbsp;
+            li &nbsp;
+          .address-bar = project[:url] || "about:history"
+        .browser-body
+          img src="/img/projects/#{project[:slug]}-2x.webp" onerror="this.onerror=null; this.src='/img/projects/#{project[:slug]}-2x.#{project[:ext] || "jpg"}'" 

@@ -1,7 +1,7 @@
 - data_array.each do |w|
   - key, prdata = w.first
   .work-unit.clearfix
-    .desktop-browser
+    .desktop-browser.left
       .browser-top.clearfix
         ul.controls
           li &nbsp;
@@ -9,14 +9,15 @@
           li &nbsp;
         .address-bar =prdata[:url] || "about:history"
       .browser-body
-        img src="/img/projects/#{prdata[:slug]}.webp" srcset="/img/projects/#{prdata[:slug]}-2x.webp 2x" onerror="this.onerror=null; this.src='/img/projects/#{prdata[:slug]}.#{prdata[:ext] || "jpg"}'; this.srcset='/img/projects/#{prdata[:slug]}-2x.#{prdata[:ext] || "jpg"} 2x'"
+        a href="/projects/#{prdata[:slug]}"
+          img src="/img/projects/#{prdata[:slug]}.webp" srcset="/img/projects/#{prdata[:slug]}-2x.webp 2x" onerror="this.onerror=null; this.src='/img/projects/#{prdata[:slug]}.#{prdata[:ext] || "jpg"}'; this.srcset='/img/projects/#{prdata[:slug]}-2x.#{prdata[:ext] || "jpg"} 2x'"
     .card
       h2 =prdata[:name]
-      - if w.has_key?(:subtitle)
+      - if prdata.has_key?(:subtitle)
         p.subtitle =prdata[:subtitle]
       p =prdata[:desc]
       p
-        - if w.has_key?(:url)
+        - if prdata.has_key?(:url)
           a href="http://#{prdata[:url]}" target="_blank"
             i.fa.fa-external-link &nbsp;
             | Visit website

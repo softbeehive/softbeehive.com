@@ -1,3 +1,9 @@
+// Box Sizing
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+  box-sizing: $type;
+}
+
 // Transform
 @mixin transform($transform) {
   -webkit-transform: $transform;
