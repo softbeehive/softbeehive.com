@@ -7,6 +7,7 @@ module ProjectData
           :url => "www.identity.com",
           :subtitle => "on behalf of Inflection",
           :desc => "Identity.com is an identity management tool that helps people control their personal data and manage their credibility online.",
+          :story => "As a member of iD team I built pixel perfect responsive client side that works well across major browsers and devices, optimized javascript making it reusable and fast, communicated with backend to organize and fetch data, contributed to styleguide to keep styles consistent, maintainable and dry. As result app is beautiful, modern and feature-rich.",
           :slug => "identity",
           :softstack => "Ruby on Rails, RSpec, JavaScript, Backbone, jQuery, Sass, Vagrant, Linux, Git",
           :chronos => "May 2014 - present"
