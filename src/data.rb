@@ -39,7 +39,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "...",
           :slug => "buyerquest",
-          :softstack => "JavaScript, Magento Enterprise, PHP, Grunt.js, Less, Twitter Bootstrap 2, Linux",
+          :softstack => "AMD JavaScript, Magento Enterprise, PHP, Grunt.js, Less, Twitter Bootstrap 2, Linux",
           :chronos => "November 2013 - February 2014",
           :ext => "png"
         }
@@ -83,7 +83,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "...",
           :slug => "fairpros",
-          :softstack => "Drupal 7, Vanilla JS, Ajax, Git, i18n, Linux",
+          :softstack => "Drupal 7, PHP, Vanilla JS, Ajax, CSS3, Git, i18n, Linux",
           :chronos => "November 2011 - May 2012"
         }
       },
@@ -94,7 +94,7 @@ module ProjectData
           :url => "www.nerz.com",
           :desc => "...",
           :slug => "nerz",
-          :softstack => "PHP, CMS, Flash, Linux",
+          :softstack => "PHP, JavaScript, MooTools, MySQL, CMS, Flash, Linux",
           :chronos => "August 2011"
         }
       },
