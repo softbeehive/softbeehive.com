@@ -20,7 +20,7 @@ html
               span.mcapt Softbeehive
           .colossus-nav
             ul.colossus-ul
-              li class=(request.path_info == "" ? "active" : "")
+              li class=(["", "/projects"].include?(request.path_info) ? "active" : "")
                 a href="/" Projects
               - menu = [{:route => "/about", :name => "About"}, {:route => "/contact", :name => "Contact"}]
               - menu.each do |item|

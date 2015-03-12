@@ -122,9 +122,9 @@ module ProjectData
       {
         :agus => {
           :name => "A-GUS Akademie",
-          :desc => "PHP, jQuery, MySQL, CMS, Graphic Design, i18n, Linux",
+          :desc => "...",
           :slug => "agus",
-          :softstack => "",
+          :softstack => "PHP, jQuery, MySQL, CMS, Graphic Design, i18n, Linux",
           :chronos => "May 2010 - June 2010"
         }
       }
