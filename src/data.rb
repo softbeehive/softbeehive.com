@@ -7,7 +7,7 @@ module ProjectData
           :url => "www.identity.com",
           :subtitle => "on behalf of Inflection",
           :desc => "Identity.com is an identity management tool that helps people control their personal data and manage their credibility online.",
-          :story => "As a member of iD team I built pixel perfect responsive client side that works well across different browsers and devices. I wrote modular javascript components that are reusable and fast, communicated with backend to organize and fetch data, contributed to styleguide to keep styles consistent, maintainable and dry. We got great result: webapp is beautiful, feature-rich, modern and easy to use.",
+          :story => ["As a member of iD team I built pixel perfect responsive client side that works well across different browsers and devices. I wrote modular javascript components that are reusable and fast, communicated with backend to organize and fetch data.", "Contributing to styleguide let us keep styles consistent, maintainable and dry. We got a great result: webapp is beautiful, feature-rich, modern and easy to use."],
           :slug => "identity",
           :softstack => "Ruby on Rails, RSpec, JavaScript, Backbone, RequireJS, jQuery, Sass, Vagrant, Linux, Git",
           :chronos => "May 2014 - present"
@@ -17,8 +17,9 @@ module ProjectData
         :adventum => {
           :name => "Adventum Sprachinstitut",
           :url => "www.adventum.at",
-          :desc => "...",
+          :desc => "Adventum Sprachinstitut is language school located in Vienna, Austria. It offers variety of courses and exams with main focus on people who learn German.",
           :slug => "adventum",
+          :story => ["For Adventum Sprachinstitut I have done full spectrum of development. Started from idea and selecting color palette I created unique graphic design and branding. On the technical side I wanted it to be very fast because performance matters, minimalistic and up-to-date.", "Core was coded in PHP using tools Zend Framework 2 provides to manage and represent data. Combination of responsive/adaptive techniques allowed to achieve good look across different viewports. Running server, versioning and support wasn't hard because I just love unix console."],
           :softstack => "Zend Framework 2, jQuery, Twitter Bootstrap 3, Sass, PHP, Graphic Design, Linux, Git",
           :chronos => "April 2014"
         }
@@ -27,8 +28,9 @@ module ProjectData
         :fot => {
           :name => "Flickr Ocean Trawler",
           :url => "ef.softbeehive.com",
-          :desc => "...",
+          :desc => "Flickr Ocean Trawler is API experiment made before WWI Centenary. Picture search and data retrieving process is organized as navy operation.",
           :slug => "fot",
+          :story => ["", ""],
           :softstack => "Zend Framework 2, Flickr API, MySQL, jQuery, PHP, Single Page Application, Open Source, Linux",
           :chronos => "March 2014"
         },
@@ -48,7 +50,7 @@ module ProjectData
         :buk => {
           :name => "Buk Presentation Tool",
           :url => "yakviter.com.ua/buk",
-          :desc => "...",
+          :desc => "Buk is mobile-ready, multidimensional presentation tool with flexible navigation and advanced controls.",
           :slug => "buk",
           :softstack => "JavaScript, jQuery, CSS3, Twitter Bootstrap 3, Graphic Design, Responsive Design, Open Source",
           :chronos => "November 2013"

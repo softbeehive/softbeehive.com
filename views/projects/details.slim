@@ -10,12 +10,15 @@
       .columns
         .half
           .detail-unit
-            h3 Impact
-            = project[:story]
-          .detail-unit
-            a href="http://#{project[:url]}" target="_blank"
-              i.fa.fa-external-link &nbsp;
-              | Visit website
+            - if project.has_key?(:story)
+              h3 Impact
+              - project[:story].each do |e|
+                p = e
+          - if project.has_key?(:url)
+            .detail-unit
+              a href="http://#{project[:url]}" target="_blank"
+                i.fa.fa-external-link &nbsp;
+                | Visit website
         .half
           .detail-unit
             h3 About
