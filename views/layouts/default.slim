@@ -3,8 +3,8 @@ html
   head
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
-    title Softbeehive - Full stack software development. Fast, simple, modern.
-    meta name="description" content="Softbeehive is Ukrainian IT company founded in 2008. We are good at software development and graphic design."
+    title = @page_title ? @page_title + " - Softbeehive" : "Softbeehive - Full stack software development. Fast, simple, modern."
+    meta name="description" content="#{@page_desc ? @page_desc : "Softbeehive is Ukrainian IT company founded in 2008. We are good at software development and graphic design. Core technologies: JavaScript, Ruby, PHP, HTML5, CSS3"}"
     meta name="viewport" content="width=device-width, initial-scale=1"
     script src="/js/helpers/svgzee.min.js"
     link rel="stylesheet" href="/css/normalize.min.css"

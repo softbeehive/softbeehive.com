@@ -26,17 +26,24 @@ module Softbeehive
 
     get "/projects/:name" do
       if selectProject(params[:name])
+        @exch = selectProject(params[:name])
+        @page_title = "Projects - " + @exch[:name]
+        @page_desc = @exch[:desc]
         slim :"projects/details"
       else
-        slim :'404'
+        show_404
       end
     end
 
     get "/about" do
+      @page_title = "About - History, vision and approach"
+      @page_desc = "Timeline, present and plans, philosophy and mission. Started in 2008, worked on more than 15 successful e-commerce, corporative and open-source projects."
       slim :about
     end
 
     get "/contact" do
+      @page_title = "Contact - Telephone, CV"
+      @page_desc = "Get in touch and start building awesome things together!"
       slim :contact
     end
 
