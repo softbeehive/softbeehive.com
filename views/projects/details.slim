@@ -8,12 +8,24 @@
   .terra.island
     .project-unit
       .columns
-        .story-unit.half 
-          h4 My Impact
-          = project[:story]
-        .half 
-          h4 Software Stack
-          = project[:softstack]
+        .half
+          .detail-unit
+            h3 Impact
+            = project[:story]
+          .detail-unit
+            a href="http://#{project[:url]}" target="_blank"
+              i.fa.fa-external-link &nbsp;
+              | Visit website
+        .half
+          .detail-unit
+            h3 About
+            div = project[:desc]
+          .detail-unit
+            h3 Software Stack
+            div = project[:softstack]
+          .detail-unit
+            h3 Timeframe
+            div = project[:chronos]
 
       .desktop-browser
         .browser-top.clearfix

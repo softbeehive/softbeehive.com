@@ -104,9 +104,19 @@
     font-size: 16px;
     vertical-align: middle;
     @include box-sizing(border-box);
+
+    > div {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
-  h4 {
+  .detail-unit {
+    margin-bottom: 1em;
+  }
+
+  h3 {
     margin-top: 0;
     margin-bottom: 10px;
   }
