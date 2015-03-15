@@ -89,7 +89,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "Corporative website of major German trade fairs representative on the African continent built as trade fairs catalog with apply forms.",
           :slug => "fairpros",
-          :story => ["", ""],
+          :story => ["I built Drupal 7 firm template based on zen boilerplate. Due to specifics of CRM I worked on customizing its modules, especially so called \"views\", which isn't view in classic MVC conception.", "Since that time I fell in love with Git and VCS became one of the pillars of my development philosophy."],
           :softstack => "Drupal 7, PHP, Vanilla JS, Ajax, CSS3, Git, i18n, Linux",
           :chronos => "November 2011 - May 2012"
         }
@@ -101,7 +101,7 @@ module ProjectData
           :url => "www.nerz.com",
           :desc => "Hardware retailer and telecommunication service company specializing in radio, mobile, network and video surveillance systems.",
           :slug => "nerz",
-          :story => ["", ""],
+          :story => ["Developing Nerz I had two more projects to complete in just one month. Running three projects in parallel isn't right thing to do but this cowboy coding experience let me learn how crucial prioritizing and effective planning is.", "Based on CMS name I don't want to call it's alive reminder of lesson I extracted: don't let anyone make your work routine conveyer."],
           :softstack => "PHP, JavaScript, MooTools, MySQL, CMS, Flash, Linux",
           :chronos => "August 2011"
         }
