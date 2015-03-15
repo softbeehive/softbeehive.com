@@ -30,7 +30,7 @@ module ProjectData
           :url => "ef.softbeehive.com",
           :desc => "Flickr Ocean Trawler is API experiment made before WWI Centenary. Picture search and data retrieving process is organized as navy operation.",
           :slug => "fot",
-          :story => ["", ""],
+          :story => ["Unique graphic style I created using my Intuos 5 pen tablet was inspired by British naval trawlers sweeping for mines. Each successful search is saved as operation with results available in two modes: intelligence and visual.", "Technically its work algorithm is passing query - getting results from Flickr over API - processing and saving data to MySQL - rendering views. And it is done as a single page application firing ajax requests in background instead of refreshing entire page."],
           :softstack => "Zend Framework 2, Flickr API, MySQL, jQuery, PHP, Single Page Application, Open Source, Linux",
           :chronos => "March 2014"
         },
@@ -53,7 +53,7 @@ module ProjectData
           :url => "yakviter.com.ua/buk",
           :desc => "Buk is mobile-ready, multidimensional presentation tool with flexible navigation and advanced controls.",
           :slug => "buk",
-          :story => ["", ""],
+          :story => ["I spent a day iterating through possible names searching for a great one. Final result I came with was even better than expected, because of its symbolism. It perfectly combines idea and materia, its educational nature and representation (<a href=\"https://github.com/softbeehive/buk#name-and-idea\" target=\"_blank\">read why</a>).", "There are 4 different ways to navigate through slides, impossible to get lost. Layout is pretty flexible too, as an alternative to default 1 slide per page there are also 2 and 3 slide modes available."],
           :softstack => "JavaScript, jQuery, CSS3, Twitter Bootstrap 3, Graphic Design, Responsive Design, Open Source",
           :chronos => "November 2013"
         }

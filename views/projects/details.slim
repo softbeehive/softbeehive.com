@@ -13,7 +13,7 @@
             - if project.has_key?(:story)
               h3 Impact
               - project[:story].each do |e|
-                p = e
+                p == e
           - if project.has_key?(:url)
             .detail-unit
               a href="http://#{project[:url]}" target="_blank"
