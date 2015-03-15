@@ -93,7 +93,7 @@ ul.colossus-ul {
 
     &.active {
       border-bottom: 2px solid $blue-link-hover;
-      
+
       a {
         color: $blue-link-hover;
       }
@@ -110,8 +110,8 @@ ul.colossus-ul {
     }
 
     a {
+      display: inline-block;
       font-size: 18px;
-      line-height: 28px;
       text-decoration: none;
     }
   }
