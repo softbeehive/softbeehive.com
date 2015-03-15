@@ -41,6 +41,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "Big data enterprise e-commerce project extensively customized for business with specific needs.",
           :slug => "buyerquest",
+          :story => ["", ""],
           :softstack => "AMD JavaScript, Magento Enterprise, PHP, Grunt.js, Less, Twitter Bootstrap 2, Linux",
           :chronos => "November 2013 - February 2014",
           :ext => "png"
@@ -52,6 +53,7 @@ module ProjectData
           :url => "yakviter.com.ua/buk",
           :desc => "Buk is mobile-ready, multidimensional presentation tool with flexible navigation and advanced controls.",
           :slug => "buk",
+          :story => ["", ""],
           :softstack => "JavaScript, jQuery, CSS3, Twitter Bootstrap 3, Graphic Design, Responsive Design, Open Source",
           :chronos => "November 2013"
         }
@@ -63,6 +65,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "InEvention is an innovative planning system called to simplify hotel and travel select for offsite meetings and events.",
           :slug => "inevention",
+          :story => ["", ""],
           :softstack => "Slim Framework, PHP, MongoDB, JavaScript, jQuery, Solr, Twitter Bootstrap 2, CentOS, OpenStreetMap API",
           :chronos => "February 2013 - October 2013",
           :ext => "png"
@@ -74,6 +77,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "Eagle is a data hub for retail industry which consists of tools for collecting, managing and processing information provided by points of sales.",
           :slug => "eagle",
+          :story => ["", ""],
           :softstack => "Zend Framework 2, JavaScript, PHP, MySQL, Linux, Subversion, Google Maps API",
           :chronos => "September 2012 - January 2013",
           :ext => "png"
@@ -85,6 +89,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "Corporative website of major German trade fairs representative on the African continent built as trade fairs catalog with apply forms.",
           :slug => "fairpros",
+          :story => ["", ""],
           :softstack => "Drupal 7, PHP, Vanilla JS, Ajax, CSS3, Git, i18n, Linux",
           :chronos => "November 2011 - May 2012"
         }
@@ -94,8 +99,9 @@ module ProjectData
           :name => "Nerz",
           :subtitle => "on behalf of Maxx-Marketing",
           :url => "www.nerz.com",
-          :desc => "...",
+          :desc => "Hardware retailer and telecommunication service company specializing in radio, mobile, network and video surveillance systems.",
           :slug => "nerz",
+          :story => ["", ""],
           :softstack => "PHP, JavaScript, MooTools, MySQL, CMS, Flash, Linux",
           :chronos => "August 2011"
         }
@@ -104,8 +110,9 @@ module ProjectData
         :"export-partner" => {
           :name => "Export Partner",
           :subtitle => "on behalf of Maxx-Marketing",
-          :desc => "...",
+          :desc => "Export / Import directory that helps business to find, compare and select suppliers abroad and exporters to extend their market geography.",
           :slug => "export-partner",
+          :story => ["", ""],
           :softstack => "Graphic Design",
           :chronos => "July 2011",
           :ext => "png"
@@ -115,8 +122,9 @@ module ProjectData
         :automore => {
           :name => "Automore",
           :subtitle => "on behalf of Maxx-Marketing",
-          :desc => "...",
+          :desc => "Vehicle marketplace online that lets user search, evaluate, sell and buy used and new cars, motocycles and trucks.",
           :slug => "automore",
+          :story => ["", ""],
           :softstack => "Graphic Design",
           :chronos => "June 2011"
         }
@@ -124,8 +132,9 @@ module ProjectData
       {
         :agus => {
           :name => "A-GUS Akademie",
-          :desc => "...",
+          :desc => "Austrian education company (predecessor of Adventum) that offered foreign language courses and online self-assessment tests.",
           :slug => "agus",
+          :story => ["", ""],
           :softstack => "PHP, jQuery, MySQL, CMS, Graphic Design, i18n, Linux",
           :chronos => "May 2010 - June 2010"
         }
