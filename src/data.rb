@@ -77,7 +77,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "Eagle is a data hub for retail industry which consists of tools for collecting, managing and processing information provided by points of sales.",
           :slug => "eagle",
-          :story => ["", ""],
+          :story => ["During development of Eagle I experienced benefits of Agile. It was kind of stress test for each team member to fit very strict deadline and achieve desired result. My main role was to convert design into code and to keep an eye on variety of display states.", "I learnt new techniques how to build bulletproof front end because packing plenty of specific data (e.g. long Swiss geographical names) into limited space required ability to predict thin ice."],
           :softstack => "Zend Framework 2, JavaScript, PHP, MySQL, Linux, Subversion, Google Maps API",
           :chronos => "September 2012 - January 2013",
           :ext => "png"
@@ -134,7 +134,7 @@ module ProjectData
           :name => "A-GUS Akademie",
           :desc => "Austrian education company (predecessor of Adventum) that offered foreign language courses and online self-assessment tests.",
           :slug => "agus",
-          :story => ["", ""],
+          :story => ["Multilingual website and online German language self-assessment system were one of the first successful projects for me as an independent developer. Dealing with content in three languages and solving issues I never faced before contributed to my skills during a short period.", "Given complete freedom in selecting tools and technologies I designed and developed product that worked for 5 years until it was replaced by rebranded new version."],
           :softstack => "PHP, jQuery, MySQL, CMS, Graphic Design, i18n, Linux",
           :chronos => "May 2010 - June 2010"
         }
