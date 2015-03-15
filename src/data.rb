@@ -41,8 +41,8 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "Big data enterprise e-commerce project extensively customized for business with specific needs.",
           :slug => "buyerquest",
-          :story => ["", ""],
-          :softstack => "AMD JavaScript, Magento Enterprise, PHP, Grunt.js, Less, Twitter Bootstrap 2, Linux",
+          :story => ["For BuyerQuest Marketplace I worked on cross-viewport front end, contributed to modular javascript components like ajax search, image preview and statistics visualization, refactored a lot of others code.", "Faced challenges operating with massive DOM where changing layout from table view to grid smoothly isn't a trivial task. Also I did client side performance optimization and automation for reducing size of assets depending on the environment."],
+          :softstack => "AMD JavaScript, PHP, Magento Enterprise, Grunt.js, Less, Twitter Bootstrap 2, Linux",
           :chronos => "November 2013 - February 2014",
           :ext => "png"
         }
@@ -53,7 +53,7 @@ module ProjectData
           :url => "yakviter.com.ua/buk",
           :desc => "Buk is mobile-ready, multidimensional presentation tool with flexible navigation and advanced controls.",
           :slug => "buk",
-          :story => ["I spent a day iterating through possible names searching for a great one. Final result I came with was even better than expected, because of its symbolism. It perfectly combines idea and materia, its educational nature and representation (<a href=\"https://github.com/softbeehive/buk#name-and-idea\" target=\"_blank\">read why</a>).", "There are 4 different ways to navigate through slides, impossible to get lost. Layout is pretty flexible too, as an alternative to default 1 slide per page there are also 2 and 3 slide modes available."],
+          :story => ["I spent a day iterating through possible names searching for a great one. Final result I came with was even better than expected, because of its symbolism. It perfectly combines idea and materia, its educational nature and representation (<a href=\"https://github.com/softbeehive/buk#name-and-idea\" target=\"_blank\">read why</a>).", "There are 4 different ways to navigate through the slides, impossible to get lost. Layout is pretty flexible too, as an alternative to default 1 slide per page there are also 2 and 3 slides at once available."],
           :softstack => "JavaScript, jQuery, CSS3, Twitter Bootstrap 3, Graphic Design, Responsive Design, Open Source",
           :chronos => "November 2013"
         }
@@ -65,7 +65,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "InEvention is an innovative planning system called to simplify hotel and travel select for offsite meetings and events.",
           :slug => "inevention",
-          :story => ["", ""],
+          :story => ["When I started with InEvention front end part required rewriting it from the ground up. Focusing on keeping it clean and flexible enough in just few months I completely rebuilt and optimized user experience for both desktop and mobile.", "Customer said I was instrumental to pack a lot of information into a UI that had to be consistent and intuitive. Graceful degradation approach helped to keep it work even in such a strict browser as IE8. "],
           :softstack => "Slim Framework, PHP, MongoDB, JavaScript, jQuery, Solr, Twitter Bootstrap 2, CentOS, OpenStreetMap API",
           :chronos => "February 2013 - October 2013",
           :ext => "png"
