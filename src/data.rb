@@ -77,7 +77,7 @@ module ProjectData
           :subtitle => "on behalf of Svitla Systems",
           :desc => "Eagle is a data hub for retail industry which consists of tools for collecting, managing and processing information provided by points of sales.",
           :slug => "eagle",
-          :story => ["During development of Eagle I experienced benefits of Agile. It was kind of stress test for each team member to fit very strict deadline and achieve desired result. My main role was to convert design into code and to keep an eye on variety of display states.", "I learnt new techniques how to build bulletproof front end because packing plenty of specific data (e.g. long Swiss geographical names) into limited space required ability to predict thin ice."],
+          :story => ["During development of Eagle I experienced benefits of Agile. It was kind of stress test for each team member to fit very strict deadline and achieve desired result. My main role was to convert design into code and to keep an eye on variety of display states.", "I learnt new techniques how to build bulletproof front end because packing plenty of specific data (e.g. long Swiss geographical names) into limited space required ability to predict the thin ice."],
           :softstack => "Zend Framework 2, JavaScript, PHP, MySQL, Linux, Subversion, Google Maps API",
           :chronos => "September 2012 - January 2013",
           :ext => "png"
@@ -112,7 +112,7 @@ module ProjectData
           :subtitle => "on behalf of Maxx-Marketing",
           :desc => "Export / Import directory that helps business to find, compare and select suppliers abroad and exporters to extend their market geography.",
           :slug => "export-partner",
-          :story => ["", ""],
+          :story => ["Core concepts of Export Partner website graphic design are minimalism, simplicity and eye-friendly color palette. Approach was 100% practical, no fancy stuff, I avoided using custom fonts and gradients.", "Chosen graphic style's main mission is to deliver message of trust to customer not distracting him from natural browsing flow."],
           :softstack => "Graphic Design",
           :chronos => "July 2011",
           :ext => "png"
@@ -124,7 +124,7 @@ module ProjectData
           :subtitle => "on behalf of Maxx-Marketing",
           :desc => "Vehicle marketplace online that lets user search, evaluate, sell and buy used and new cars, motocycles and trucks.",
           :slug => "automore",
-          :story => ["", ""],
+          :story => ["Major intention when designing Automore website was to link automotive assosiations with appropriate archetypes in visitors mind. That's what steering wheel branding and manual gearbox scheme are called to launch.", "Emphasizing on importance of sell and buy actions I separated search form to bring visitor's attention. Light blue frame makes transition between hard contrast browser egdes less painful."],
           :softstack => "Graphic Design",
           :chronos => "June 2011"
         }
@@ -134,7 +134,7 @@ module ProjectData
           :name => "A-GUS Akademie",
           :desc => "Austrian education company (predecessor of Adventum) that offered foreign language courses and online self-assessment tests.",
           :slug => "agus",
-          :story => ["Multilingual website and online German language self-assessment system were one of the first successful projects for me as an independent developer. Dealing with content in three languages and solving issues I never faced before contributed to my skills during a short period.", "Given complete freedom in selecting tools and technologies I designed and developed product that worked for 5 years until it was replaced by rebranded new version."],
+          :story => ["Multilingual website and online German language self-assessment system were one of the first successful projects for me as an independent developer. Dealing with content in three languages and solving issues I never faced before contributed to my skills during a short period.", "Given complete freedom in selecting tools and technologies I designed and developed product that worked for 4.5 years until it was replaced by rebranded new version."],
           :softstack => "PHP, jQuery, MySQL, CMS, Graphic Design, i18n, Linux",
           :chronos => "May 2010 - June 2010"
         }
