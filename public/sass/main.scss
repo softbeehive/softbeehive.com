@@ -144,8 +144,12 @@ ul.colossus-ul {
   position: relative;
   color: white;
   background-color: $blue-start;
-  padding: 70px 0;
+  padding: 50px 0;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 70px 0;
+  }
 
   &.blue-grad {
     @include linear-gradient(-45deg, $blue-end, $blue-start);
@@ -161,6 +165,7 @@ ul.colossus-ul {
 
   h1 {
     font-weight: 500;
+    line-height: 1.2;
     text-shadow: 1px 1px 1px rgba($grey7, 0.4);
   }
 
@@ -190,7 +195,11 @@ ul.colossus-ul {
 }
 
 .terra {
-  padding: 60px 0;
+  padding: 40px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
 }
 
 /* = Pacific ocean = */
