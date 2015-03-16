@@ -9,7 +9,9 @@ module Softbeehive
     configure :development do
       register Sinatra::Reloader
       also_reload "src/data.rb"
+    end
 
+    configure do
       set :slim, :layout => :"layouts/default"
       set :bind, "0.0.0.0"
     end
@@ -51,6 +53,12 @@ module Softbeehive
       def show_404
         status 404
         slim :'404'
+      end
+    end
+
+    helpers do
+      def h(text)
+        Rack::Utils.escape_html(text)
       end
     end
 
