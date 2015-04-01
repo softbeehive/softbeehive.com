@@ -10,7 +10,7 @@ module ProjectData
           :story => ["As a member of iD team I built pixel perfect responsive client side that works well across different browsers and devices. I wrote modular javascript components that are reusable and fast, communicated with backend to organize and fetch data.", "Contributing to styleguide let us keep styles consistent, maintainable and dry. We got a great result: webapp is beautiful, feature-rich, modern and easy to use."],
           :slug => "identity",
           :softstack => "Ruby on Rails, RSpec, JavaScript, Backbone, RequireJS, jQuery, Sass, Vagrant, Linux, Git",
-          :chronos => "May 2014 - present"
+          :chronos => "May 2014 - March 2015"
         }
       },
       {
