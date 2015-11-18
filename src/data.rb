@@ -97,11 +97,11 @@ module ProjectData
       {
         :nerz => {
           :name => "Nerz",
-          :subtitle => "on behalf of Maxx-Marketing",
+          :subtitle => "on behalf of MAXXmarketing",
           :url => "www.nerz.com",
           :desc => "Hardware retailer and telecommunication service company specializing in radio, mobile, network and video surveillance systems.",
           :slug => "nerz",
-          :story => ["Developing Nerz I had two more projects to complete in just one month. Running three projects in parallel isn't right thing to do but this cowboy coding experience let me learn how crucial prioritizing and effective planning is.", "Based on CMS name I don't want to call it's alive reminder of lesson I extracted: don't let anyone make your work routine conveyer."],
+          :story => ["Developing Nerz I had two more projects to complete in just one month. Running three projects in parallel isn't right thing to do but this cowboy coding experience let me learn how crucial prioritizing and effective planning is.", "Based on CMS name I don't want to call, it's alive reminder of lesson I extracted: don't let anyone make your work routine conveyer."],
           :softstack => "PHP, JavaScript, MooTools, MySQL, CMS, Flash, Linux",
           :chronos => "August 2011"
         }
@@ -109,7 +109,7 @@ module ProjectData
       {
         :"export-partner" => {
           :name => "Export Partner",
-          :subtitle => "on behalf of Maxx-Marketing",
+          :subtitle => "on behalf of MAXXmarketing",
           :desc => "Export / Import directory that helps business to find, compare and select suppliers abroad and exporters to extend their market geography.",
           :slug => "export-partner",
           :story => ["Core concepts of Export Partner website graphic design are minimalism, simplicity and eye-friendly color palette. Approach was 100% practical, no fancy stuff, I avoided using custom fonts and gradients.", "Chosen graphic style's main mission is to deliver message of trust to customer not distracting him from natural browsing flow."],
@@ -121,7 +121,7 @@ module ProjectData
       {
         :automore => {
           :name => "Automore",
-          :subtitle => "on behalf of Maxx-Marketing",
+          :subtitle => "on behalf of MAXXmarketing",
           :desc => "Vehicle marketplace online that lets user search, evaluate, sell and buy used and new cars, motocycles and trucks.",
           :slug => "automore",
           :story => ["Major intention when designing Automore website was to link automotive assosiations with appropriate archetypes in visitors mind. That's what steering wheel branding and manual gearbox scheme are called to launch.", "Emphasizing on importance of sell and buy actions I separated search form to bring visitor's attention. Light blue frame makes transition between hard contrast browser egdes less painful."],

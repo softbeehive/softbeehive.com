@@ -4,11 +4,10 @@ css_dir = "public/css"
 sass_dir = "public/sass"
 images_dir = "public/img"
 
-relative_assets = true
-
 # One of :expanded or :nested or :compact or :compressed
 output_style = :compressed
 
-# To enable relative paths to assets via compass helper functions. Uncomment:
+# To disable relative paths to assets via compass helper functions. Comment out:
 # relative_assets = true
+relative_assets = true
 line_comments = false

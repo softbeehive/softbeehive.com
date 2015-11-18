@@ -1,1 +1,2 @@
-README.md
+# Run it
+`rackup -p 4567`
