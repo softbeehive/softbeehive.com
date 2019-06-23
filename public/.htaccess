@@ -1,5 +1,0 @@
-# Redirect www urls to non-www
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.softbeehive\.com [NC]
-RewriteRule (.*) http://softbeehive.com/$1 [R=301,L]
