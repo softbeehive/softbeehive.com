@@ -1,8 +1,21 @@
 <template>
-  <div>
+  <div id="" class="layout flex flex-col">
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
-<style lang="scss" scoped>
-</style>
+<script>
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+
+export default {
+  components: {
+    Header,
+    Footer,
+  },
+}
+</script>
+
+<style lang="scss" scoped></style>
