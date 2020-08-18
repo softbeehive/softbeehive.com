@@ -1,14 +1,19 @@
 <template>
   <div class="hero">
-    I build web applications
+    <FlexContainer>
+      <slot />
+    </FlexContainer>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Hero'
+  name: 'Hero',
 }
 </script>
 
 <style lang="scss" scoped>
+.hero {
+  // background-color: blue;
+}
 </style>

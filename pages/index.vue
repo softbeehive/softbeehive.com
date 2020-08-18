@@ -1,18 +1,8 @@
 <template>
-  <div class="projects">
-    <Hero />
+  <div>
+    <Hero>I build web applications</Hero>
+    <div class="projects">
+      <FlexContainer>Projects</FlexContainer>
+    </div>
   </div>
 </template>
-
-<script>
-import Hero from '@/components/Hero'
-
-export default {
-  components: {
-    Hero
-  }
-}
-</script>
-
-<style>
-</style>

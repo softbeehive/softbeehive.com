@@ -1,17 +1,18 @@
 <template>
   <header class="header">
-    <div class="container">
+    <FlexContainer
+      class="flex-wrap justify-center items-center sm:justify-between"
+    >
       <Logo />
-      <Menu />
-    </div>
+      <Menu class="w-full sm:w-auto flex" />
+    </FlexContainer>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
