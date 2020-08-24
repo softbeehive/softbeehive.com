@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   min-height: 100%;
+  color: theme('colors.gray.800');
 }
 
 #__app {
@@ -16,10 +17,5 @@ body {
 }
 
 a {
-  color: theme('colors.black');
-  
-  &:hover {
-    text-decoration: underline;
-  }
-
+  color: theme('colors.blue.700');
 }

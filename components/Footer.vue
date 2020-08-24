@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer">
-    <FlexContainer>{{ startYear }} - {{ currentYear }} </FlexContainer>
+  <footer class="footer bg-gray-800 text-white py-4">
+    <FlexContainer>&copy; {{ startYear }} - {{ currentYear }} </FlexContainer>
   </footer>
 </template>
 

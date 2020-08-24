@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <ul class="nav-menu flex justify-around w-full">
-      <li v-for="(route, i) in routes" :key="route.name + i" class="px-2">
+    <ul class="nav-menu flex justify-around w-full pb-4 sm:pb-0 font-medium">
+      <li v-for="(route, i) in routes" :key="route.name + i" class="px-4">
         <nuxt-link class="" :to="route.path">
           {{ route.name }}
         </nuxt-link>
@@ -23,3 +23,17 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.nav-menu {
+  a {
+    border-bottom: 2px solid transparent;
+
+    &:hover,
+    &:focus {
+      color: theme('colors.blue.900');
+      border-bottom-color: theme('colors.blue.900');
+    }
+  }
+}
+</style>
