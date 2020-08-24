@@ -3,7 +3,7 @@
     <nuxt-link to="/">
       <img
         class="logo w-32 h-32"
-        src="@/assets/img/logo.svg"
+        src="@/assets/img/ui/logo.svg"
         alt="softbeehive logo"
       />
     </nuxt-link>
