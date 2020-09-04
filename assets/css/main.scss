@@ -17,5 +17,12 @@ body {
 }
 
 a {
-  color: theme('colors.blue.700');
+  color: theme('colors.links.default');
+  border-bottom: 1px solid transparent;
+
+  &:focus,
+  &:hover {
+    color: theme('colors.links.hover');
+    border-bottom-color: theme('colors.links.hover');
+  }
 }

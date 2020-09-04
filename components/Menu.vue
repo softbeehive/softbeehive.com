@@ -27,13 +27,7 @@ export default {
 <style lang="scss" scoped>
 .nav-menu {
   a {
-    border-bottom: 2px solid transparent;
-
-    &:hover,
-    &:focus {
-      color: theme('colors.blue.900');
-      border-bottom-color: theme('colors.blue.900');
-    }
+    border-bottom-width: 2px;
   }
 }
 </style>

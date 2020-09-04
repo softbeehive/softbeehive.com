@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
+  background-color: theme('colors.blue.600'); // fallback
   background-image: linear-gradient(
     109.6deg,
     rgba(31, 179, 237, 1) 11.2%,
