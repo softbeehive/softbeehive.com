@@ -3,7 +3,7 @@
     <FlexContainer
       class="flex-wrap justify-center items-center sm:justify-between"
     >
-      <Logo />
+      <TheLogo />
       <Menu class="w-full sm:w-auto flex" />
     </FlexContainer>
   </header>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'TheHeader',
 }
 </script>
 

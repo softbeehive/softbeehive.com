@@ -1,12 +1,15 @@
 <template>
   <footer class="footer bg-gray-800 text-white py-4">
-    <FlexContainer>&copy; {{ startYear }} - {{ currentYear }} </FlexContainer>
+    <FlexContainer>
+      <span class="mr-2">&copy; {{ startYear }} - {{ currentYear }}</span>
+      <span>{{ author }}</span>
+    </FlexContainer>
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'TheFooter',
 
   computed: {
     startYear() {
@@ -17,8 +20,10 @@ export default {
       const d = new Date()
       return d.getFullYear()
     },
+
+    author() {
+      return 'Oleksandr Bystrikov'
+    },
   },
 }
 </script>
-
-<style lang="scss" scoped></style>
