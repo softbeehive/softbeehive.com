@@ -1,10 +1,21 @@
 <template>
-  <div class="overflow-hidden">
+  <div>
     <Hero>
-      <div class="flex-grow-1 flex-shrink-0">
-        I build web applications
-      </div>
+      I build robust web apps
     </Hero>
-    <Projects />
+    <Projects :projects="projects" />
   </div>
 </template>
+
+<script>
+export default {
+  asyncData({ $content }) {
+    return $content('projects')
+      .sortBy('createdAt', 'desc')
+      .fetch()
+      .then((projects) => {
+        return { projects }
+      })
+  },
+}
+</script>
