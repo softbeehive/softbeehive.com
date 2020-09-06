@@ -1,0 +1,29 @@
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  color: theme('colors.gray.800');
+}
+
+#__app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#__layout {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+a {
+  color: theme('colors.links.default');
+  border-bottom: 1px solid transparent;
+
+  &.nuxt-link-exact-active,
+  &:focus,
+  &:hover {
+    color: theme('colors.links.hover');
+    border-bottom-color: theme('colors.links.hover');
+  }
+}
