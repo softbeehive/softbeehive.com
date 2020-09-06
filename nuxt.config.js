@@ -34,7 +34,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: ['~/plugins/vue-lazysizes.client.js'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -54,6 +54,7 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    '@aceforth/nuxt-optimized-images',
   ],
   /*
    ** Content module configuration
@@ -68,6 +69,37 @@ export default {
    */
   build: {
     publicPath: '/all/',
+
+    extend(config, { isClient, loaders: { vue } }) {
+      if (isClient) {
+        vue.transformAssetUrls.img = ['data-src', 'src']
+        vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      }
+    },
   },
+  /*
+   * This defines root element id
+   */
   globalName: 'app',
+  /*
+   * Resize images with nuxt-optimize-images
+   */
+  optimizedImages: {
+    inlineImageLimit: -1,
+    handleImages: ['jpeg', 'png', 'svg', 'webp'],
+    optimizeImages: true,
+    optimizeImagesInDev: false,
+    defaultImageLoader: 'img-loader',
+    mozjpeg: {
+      quality: 85,
+    },
+    optipng: false,
+    pngquant: {
+      speed: 7,
+      quality: [0.65, 0.8],
+    },
+    webp: {
+      quality: 85,
+    },
+  },
 }
