@@ -1,8 +1,10 @@
 <template>
-  <article>
-    <h1>{{ project.title }}</h1>
-    <nuxt-content :id="project.slug" :document="project" />
-  </article>
+  <div class="project">
+    <Hero>{{ project.title }}</Hero>
+    <FlexContainer class="flex-col">
+      <LazyProjectDetails :project="project" />
+    </FlexContainer>
+  </div>
 </template>
 
 <script>

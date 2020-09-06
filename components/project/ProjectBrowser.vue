@@ -1,31 +1,46 @@
 <template>
-  <div class="w-full lg:w-2/3 px-4">
-    <div class="browser rounded-md overflow-hidden mb-4 lg:mb-auto">
-      <div class="browser-top flex items-center p-3">
-        <ul
-          class="browser-controls flex-grow-1 flex-shrink-0 hidden lg:block pr-3"
-        >
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div
-          class="browser-address-bar flex-grow-1 w-full rounded bg-gray-300 text-gray-700 py-2 px-3"
-        >
-          {{ project.origin || 'about:history' }}
-        </div>
-      </div>
-      <div class="browser-body">
-        <img
-          v-if="project.slug"
-          class="w-full"
-          :src="
-            require(`@/assets/img/projects/${project.slug}-2x.${
-              project.imageExt || 'jpg'
-            }`)
-          "
+  <div class="browser rounded-md overflow-hidden mb-4 lg:mb-auto">
+    <div class="browser-top flex items-center p-3">
+      <ul
+        class="browser-controls flex-grow-1 flex-shrink-0 hidden lg:block pr-3"
+      >
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div
+        class="browser-address-bar flex items-center flex-grow-1 w-full rounded bg-gray-300 text-gray-700 py-2 px-3"
+      >
+        <BaseIcon
+          name="lock"
+          size="0.9"
+          class="browser-lock flex-grow-1 flex-shrink-0 text-gray-500 fill-current mr-2"
         />
+        <div class="flex-shrink-1">{{ project.origin || 'about:history' }}</div>
       </div>
+    </div>
+    <div class="browser-body">
+      <figure v-if="project.slug" class="picture">
+        <picture>
+          <source
+            :data-srcset="
+              require(`@/assets/img/projects/${project.slug}-2x.${
+                project.imageExt || 'jpg'
+              }?webp`)
+            "
+            type="image/webp"
+          />
+          <img
+            class="w-full lazyload"
+            :alt="project.title"
+            :data-src="
+              require(`@/assets/img/projects/${project.slug}-2x.${
+                project.imageExt || 'jpg'
+              }`)
+            "
+          />
+        </picture>
+      </figure>
     </div>
   </div>
 </template>

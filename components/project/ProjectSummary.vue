@@ -1,5 +1,5 @@
 <template>
-  <div class="project-summary w-full lg:w-1/3 px-4">
+  <div>
     <header class="pb-3">
       <h3 class="text-2xl font-semibold">{{ project.title }}</h3>
       <span v-if="project.subtitle">{{ project.subtitle }}</span>
@@ -9,7 +9,7 @@
     </section>
     <section v-if="project.origin" class="pb-4 flex items-center">
       <BaseIcon name="external-link-alt" class="mr-1" />
-      <a :href="`https://${project.origin}`" target="_blank">
+      <a :href="`https://${project.origin}`" target="_blank" rel="noopener">
         Visit website
       </a>
     </section>

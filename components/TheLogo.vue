@@ -1,5 +1,5 @@
 <template>
-  <div class="logo p-4">
+  <div class="logo py-4">
     <nuxt-link to="/">
       <img
         class="logo w-32 h-32"
@@ -8,7 +8,7 @@
       />
     </nuxt-link>
     <div>
-      <h1 class="text-2xl font-semibold">Softbeehive</h1>
+      <h1 class="text-2xl text-black font-semibold">Softbeehive</h1>
     </div>
   </div>
 </template>

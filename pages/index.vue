@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero>
-      I build robust web apps
+      <h2>I build robust web apps</h2>
     </Hero>
     <Projects :projects="projects" />
   </div>
