@@ -90,6 +90,9 @@ export default {
     optimizeImages: true,
     optimizeImagesInDev: false,
     defaultImageLoader: 'img-loader',
+    responsive: {
+      adapter: require('responsive-loader/sharp'),
+    },
     mozjpeg: {
       quality: 85,
     },
