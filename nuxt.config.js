@@ -92,6 +92,7 @@ export default {
     defaultImageLoader: 'img-loader',
     responsive: {
       adapter: require('responsive-loader/sharp'),
+      placeholder: true,
     },
     mozjpeg: {
       quality: 85,

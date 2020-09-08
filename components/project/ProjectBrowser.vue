@@ -21,15 +21,15 @@
     </div>
     <div class="browser-body">
       <picture v-if="project.slug">
-        <source :data-srcset="webpImage.srcSet" type="image/webp" />
-        <source
-          :data-srcset="resizedImage.srcSet"
-          :type="`image/${mimeType}`"
-        />
+        <source :data-srcset="webpImage.srcSet" :type="mimeType" />
+        <source :data-srcset="resizedImage.srcSet" :type="mimeType" />
         <img
           class="w-full lazyload"
           :alt="project.title"
+          :width="resizedImage.width"
+          :height="resizedImage.height"
           :data-src="originalImage"
+          :src="resizedImage.placeholder"
         />
       </picture>
     </div>
@@ -51,7 +51,8 @@ export default {
     },
 
     mimeType() {
-      return this.project.imageExt || 'jpeg' // jpeg not jpg is a valid mime type
+      const type = this.project.imageExt || 'jpeg' // jpeg not jpg is a valid mime type
+      return `image/${type}`
     },
 
     webpImage() {
