@@ -37,6 +37,9 @@ Temporary Items
 # Nuxt generate
 dist
 
+# Service worker
+sw.*
+
 ### Vuejs ###
 # Recommended template: Node.gitignore
 
