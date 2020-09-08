@@ -20,27 +20,18 @@
       </div>
     </div>
     <div class="browser-body">
-      <figure v-if="project.slug" class="picture">
-        <picture>
-          <source
-            :data-srcset="
-              require(`@/assets/img/projects/${project.slug}-2x.${
-                project.imageExt || 'jpg'
-              }?webp`)
-            "
-            type="image/webp"
-          />
-          <img
-            class="w-full lazyload"
-            :alt="project.title"
-            :data-src="
-              require(`@/assets/img/projects/${project.slug}-2x.${
-                project.imageExt || 'jpg'
-              }`)
-            "
-          />
-        </picture>
-      </figure>
+      <picture v-if="project.slug">
+        <source :data-srcset="webpImage.srcSet" type="image/webp" />
+        <source
+          :data-srcset="resizedImage.srcSet"
+          :type="`image/${mimeType}`"
+        />
+        <img
+          class="w-full lazyload"
+          :alt="project.title"
+          :data-src="originalImage"
+        />
+      </picture>
     </div>
   </div>
 </template>
@@ -51,6 +42,31 @@ export default {
     project: {
       type: Object,
       required: true,
+    },
+  },
+
+  computed: {
+    imageExt() {
+      return this.project.imageExt || 'jpg'
+    },
+
+    mimeType() {
+      return this.project.imageExt || 'jpeg' // jpeg not jpg is a valid mime type
+    },
+
+    webpImage() {
+      const image = require(`@/assets/img/projects/${this.project.slug}.${this.imageExt}?resize&sizes[]=720,sizes[]=1440&format=webp`)
+      return image
+    },
+
+    resizedImage() {
+      const image = require(`@/assets/img/projects/${this.project.slug}.${this.imageExt}?resize&sizes[]=720,sizes[]=1440`)
+      return image
+    },
+
+    originalImage() {
+      const image = require(`@/assets/img/projects/${this.project.slug}.${this.imageExt}`)
+      return image
     },
   },
 }

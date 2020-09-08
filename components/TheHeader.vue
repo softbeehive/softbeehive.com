@@ -14,5 +14,3 @@ export default {
   name: 'TheHeader',
 }
 </script>
-
-<style lang="scss" scoped></style>

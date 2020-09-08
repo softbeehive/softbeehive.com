@@ -1,8 +1,8 @@
 <template>
   <nav>
-    <ul class="nav-menu flex justify-around w-full pb-4 sm:pb-0 font-medium">
+    <ul class="nav-menu flex justify-center w-full pb-4 sm:pb-0 font-medium">
       <li v-for="(route, i) in routes" :key="route.name + i" class="px-4">
-        <nuxt-link class="" :to="route.path">
+        <nuxt-link class="pb-px" :to="route.path">
           {{ route.name }}
         </nuxt-link>
       </li>
@@ -23,11 +23,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.nav-menu {
-  a {
-    border-bottom-width: 2px;
-  }
-}
-</style>

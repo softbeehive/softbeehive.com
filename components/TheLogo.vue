@@ -1,15 +1,13 @@
 <template>
-  <div class="logo py-4">
-    <nuxt-link to="/">
+  <div class="logo flex items-center content-center pt-8 pb-6 sm:pb-8">
+    <nuxt-link to="/" class="flex items-center content-center border-none">
       <img
-        class="logo w-32 h-32"
+        class="logo w-12 h-12 mr-1"
         src="@/assets/img/ui/logo.svg"
         alt="softbeehive logo"
       />
-    </nuxt-link>
-    <div>
       <h1 class="text-2xl text-black font-semibold">Softbeehive</h1>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
