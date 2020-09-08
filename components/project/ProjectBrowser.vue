@@ -21,7 +21,7 @@
     </div>
     <div class="browser-body">
       <picture v-if="project.slug">
-        <source :data-srcset="webpImage.srcSet" :type="mimeType" />
+        <source :data-srcset="webpImage.srcSet" type="image/webp" />
         <source :data-srcset="resizedImage.srcSet" :type="mimeType" />
         <img
           class="w-full lazyload"
