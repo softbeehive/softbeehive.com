@@ -55,12 +55,12 @@ export default {
     },
 
     webpImage() {
-      const image = require(`@/assets/img/projects/${this.project.slug}.${this.imageExt}?resize&sizes[]=720,sizes[]=1440&format=webp`)
+      const image = require(`@/assets/img/projects/${this.project.slug}.${this.imageExt}?resize&sizes[]=840,sizes[]=1280,sizes[]=1680&format=webp`)
       return image
     },
 
     resizedImage() {
-      const image = require(`@/assets/img/projects/${this.project.slug}.${this.imageExt}?resize&sizes[]=720,sizes[]=1440`)
+      const image = require(`@/assets/img/projects/${this.project.slug}.${this.imageExt}?resize&sizes[]=840,sizes[]=1280,sizes[]=1680`)
       return image
     },
 
