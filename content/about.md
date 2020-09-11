@@ -2,7 +2,7 @@
 title: 'About'
 ---
 
-### First project
+### From idea to production
 
 The story of softbeehive began back in 2008 when I picked my internet nickname while studying mechanical engineering at National Aviation University in Kyiv, Ukraine. At the age of 19 I became disillusioned about my university and got bored by the slow learning process.
 

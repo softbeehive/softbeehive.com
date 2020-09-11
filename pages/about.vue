@@ -2,7 +2,16 @@
   <div>
     <Hero>About me</Hero>
     <FlexContainer class="flex-col py-5 md:py-8">
-      <nuxt-content id="about" class="prose" :document="about" />
+      <div class="flex">
+        <nuxt-content id="about" class="prose" :document="about" />
+        <div class="w-48 overflow-hidden lg:ml-6 flex-shrink-0">
+          <img
+            src="~/assets/img/pages/oleksandr.jpg"
+            alt="Oleksandr Bystrikov"
+            class="rounded-full"
+          />
+        </div>
+      </div>
     </FlexContainer>
   </div>
 </template>
@@ -51,3 +60,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+#about {
+  max-width: unset;
+}
+</style>
