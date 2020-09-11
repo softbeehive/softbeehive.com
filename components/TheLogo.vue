@@ -1,5 +1,5 @@
 <template>
-  <div class="logo flex items-center content-center pt-8 pb-6 sm:pb-8">
+  <div class="logo flex items-center content-center pt-6 pb-5 md:py-8">
     <nuxt-link to="/" class="flex items-center content-center border-none">
       <img
         class="logo w-12 h-12 mr-1"

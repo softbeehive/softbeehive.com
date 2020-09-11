@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     v-bind="($props, $attrs)"
-    class="button-link rounded font-semibold px-6 py-3 inline-block"
+    class="button-link rounded-full font-semibold px-6 py-3 inline-block"
   >
     <slot />
   </nuxt-link>
@@ -15,8 +15,6 @@ export default {
 
 <style lang="scss" scoped>
 .button-link {
-  color: unset;
-  border: unset;
   cursor: pointer;
   background: linear-gradient(
     135deg,
