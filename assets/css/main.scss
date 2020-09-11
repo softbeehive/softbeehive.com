@@ -20,6 +20,7 @@ a.link {
   color: theme('colors.links.default');
   border-bottom: 1px solid transparent;
 
+  &.nuxt-link-active,
   &.nuxt-link-exact-active,
   &:focus,
   &:hover {

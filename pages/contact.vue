@@ -18,6 +18,8 @@
             :href="item.link"
             target="_blank"
             rel="noopener"
+            :title="item.name"
+            :alt="item.name"
           >
             <BaseIcon
               :name="item.name"
