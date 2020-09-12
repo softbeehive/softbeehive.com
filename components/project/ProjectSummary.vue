@@ -13,7 +13,7 @@
         :href="`https://${project.origin}`"
         target="_blank"
         class="link"
-        rel="noopener"
+        :rel="relAttr"
       >
         Visit website
       </a>
@@ -39,6 +39,16 @@ export default {
     project: {
       type: Object,
       required: true,
+    },
+  },
+
+  computed: {
+    relAttr() {
+      const values = [
+        'noopener', // https://web.dev/external-anchors-use-rel-noopener/
+      ]
+      if (!this.project.relfollow) values.push('nofollow')
+      return values.join(' ')
     },
   },
 }
