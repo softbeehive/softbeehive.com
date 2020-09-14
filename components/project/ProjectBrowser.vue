@@ -80,7 +80,7 @@ export default {
 }
 
 .browser-top {
-  border-bottom: 1px solid theme('colors.gray.200');
+  border-bottom: 1px solid theme('colors.gray.300');
 }
 
 .browser-controls {
