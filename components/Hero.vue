@@ -3,9 +3,9 @@
     <FlexContainer
       class="flex-col justify-center items-center text-center text-white"
     >
-      <h2 class="font-serif text-2xl md:text-3xl">
+      <h1 class="font-serif text-2xl md:text-3xl">
         <slot />
-      </h2>
+      </h1>
       <slot name="subtitle" />
     </FlexContainer>
   </div>

@@ -1,10 +1,8 @@
 <template>
   <div>
     <section class="prose">
-      <h3 class="project-name text-2xl font-semibold">{{ project.title }}</h3>
-      <span v-if="project.subtitle" class="font-normal">{{
-        project.subtitle
-      }}</span>
+      <h2 class="project-name">{{ project.title }}</h2>
+      <span class="font-normal">{{ project.subtitle }}</span>
       <p v-if="project.summary">{{ project.summary }}</p>
     </section>
     <p v-if="project.origin" class="flex items-center my-5">
@@ -59,7 +57,7 @@ export default {
   fill: theme('colors.links.default');
 }
 
-.prose h3 {
+.prose h2 {
   &.project-name {
     @apply mb-0;
   }

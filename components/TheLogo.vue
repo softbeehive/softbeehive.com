@@ -6,7 +6,7 @@
         src="@/assets/img/ui/logo.svg"
         alt="softbeehive logo"
       />
-      <h1 class="text-2xl text-black font-semibold">Softbeehive</h1>
+      <span class="text-2xl text-black font-semibold">Softbeehive</span>
     </nuxt-link>
   </div>
 </template>
