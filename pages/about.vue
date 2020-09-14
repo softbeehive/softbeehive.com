@@ -2,36 +2,48 @@
   <div>
     <Hero>About me</Hero>
     <FlexContainer class="flex-col py-5 md:py-8">
-      <div class="flex">
-        <nuxt-content id="about" class="prose" :document="about" />
-        <div class="w-48 overflow-hidden lg:ml-6 flex-shrink-0">
+      <div
+        class="flex flex-wrap lg:flex-no-wrap items-center justify-center lg:-mx-10"
+      >
+        <div
+          class="w-full lg:w-56 max-w-sm mb-5 mt-1 lg:mb-0 lg:mt-0 lg:px-10 lg:order-last flex-shrink-0 overflow-hidden"
+        >
           <img
-            src="~/assets/img/pages/oleksandr.jpg"
-            alt="Oleksandr Bystrikov"
-            class="rounded-full"
+            src="@/assets/img/pages/lighthouse-y.png"
+            alt="Lighthouse results"
+            class="hidden lg:block"
+          />
+          <img
+            src="@/assets/img/pages/lighthouse-x.png"
+            alt="Lighthouse results"
+            class="block lg:hidden"
           />
         </div>
+        <nuxt-content
+          id="about"
+          class="w-full lg:w-auto prose flex-grow-0 lg:px-10"
+          :document="about"
+        />
       </div>
     </FlexContainer>
   </div>
 </template>
 
 <script>
+import ExperienceCounter from '@/components/tiny/ExperienceCounter'
+
 export default {
+  components: {
+    // eslint-disable-next-line vue/no-unused-components
+    ExperienceCounter,
+  },
+
   asyncData({ $content }) {
     return $content('about')
       .fetch()
       .then((about) => {
         return { about }
       })
-  },
-  computed: {
-    experienceInYears() {
-      const start = 2008
-      const currYear = new Date().getFullYear()
-      const diff = parseInt(currYear) - start
-      return diff
-    },
   },
 
   head() {
