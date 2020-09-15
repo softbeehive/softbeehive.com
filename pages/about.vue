@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero>About me</Hero>
-    <FlexContainer class="flex-col py-5 md:py-8">
+    <FlexContainer class="flex-col py-8">
       <div
         class="flex flex-wrap lg:flex-no-wrap items-center justify-center lg:-mx-10"
       >

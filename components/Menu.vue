@@ -1,6 +1,6 @@
 <template>
   <nav class="-mx-4">
-    <ul class="nav-menu flex justify-center w-full font-medium pb-5 sm:pb-0">
+    <ul class="nav-menu flex justify-center w-full font-medium pb-8 sm:pb-0">
       <li v-for="(route, i) in routes" :key="route.name + i" class="px-4">
         <nuxt-link class="link pb-px" :to="route.path">
           {{ route.name }}

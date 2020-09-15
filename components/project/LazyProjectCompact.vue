@@ -1,5 +1,5 @@
 <template>
-  <article class="project flex flex-wrap mb-8 md:mb-10 -mx-4">
+  <article class="project flex flex-wrap mb-10 md:mb-12 -mx-4">
     <div class="w-full lg:w-2/3 px-4">
       <nuxt-link :to="`/projects/${project.slug}`" class="block">
         <ProjectBrowser :project="project" />
