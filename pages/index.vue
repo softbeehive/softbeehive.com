@@ -1,9 +1,13 @@
 <template>
   <div>
-    <Hero>
-      <h2>I build robust web apps</h2>
-    </Hero>
-    <Projects :projects="projects" />
+    <Hero>I build robust web apps</Hero>
+    <FlexContainer class="flex-col py-5 md:py-8">
+      <LazyProjectCompact
+        v-for="(project, i) in projects"
+        :key="project + i"
+        :project="project"
+      />
+    </FlexContainer>
   </div>
 </template>
 
@@ -16,6 +20,21 @@ export default {
       .then((projects) => {
         return { projects }
       })
+  },
+
+  head() {
+    const title = 'Oleksandr Bystrikov - Work and projects'
+    return {
+      title,
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: title,
+        },
+        // meta description for index page is defined in package.json
+      ],
+    }
   },
 }
 </script>

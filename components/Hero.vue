@@ -1,9 +1,12 @@
 <template>
-  <div class="hero py-10 md:py-16 mb-4 md:mb-8">
+  <div class="hero py-10 sm:py-12 md:py-16">
     <FlexContainer
-      class="flex-col justify-center items-center relative font-serif text-center text-2xl md:text-3xl text-white"
+      class="flex-col justify-center items-center text-center text-white"
     >
-      <slot />
+      <h1 class="font-serif text-2xl md:text-3xl">
+        <slot />
+      </h1>
+      <slot name="subtitle" />
     </FlexContainer>
   </div>
 </template>

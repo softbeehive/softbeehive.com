@@ -1,3 +1,7 @@
+import resolveConfig from 'tailwindcss/resolveConfig'
+import tailwindConfig from './tailwind.config.js'
+const fullTailwindConfig = resolveConfig(tailwindConfig)
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -14,15 +18,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s | Softbeehive',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || '',
-      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -82,6 +81,12 @@ export default {
    */
   globalName: 'app',
   /*
+   * Loading bar
+   */
+  loading: {
+    color: fullTailwindConfig.theme.colors.primary,
+  },
+  /*
    * Resize images with nuxt-optimize-images
    */
   optimizedImages: {
@@ -93,6 +98,7 @@ export default {
     responsive: {
       adapter: require('responsive-loader/sharp'),
       placeholder: true,
+      placeholderSize: 40,
     },
     mozjpeg: {
       quality: 85,
@@ -105,5 +111,9 @@ export default {
     webp: {
       quality: 85,
     },
+  },
+  // PWA
+  pwa: {
+    icon: true,
   },
 }

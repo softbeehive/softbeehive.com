@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#246bce',
+        contra: '#003452',
         links: {
           default: '#1f5baf',
           hover: '#1a4c92',
@@ -22,7 +23,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',

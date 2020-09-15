@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-gray-800 text-white py-4">
+  <footer class="footer bg-contra text-white py-4">
     <FlexContainer>
       <span class="mr-2">&copy; {{ startYear }} - {{ currentYear }}</span>
       <span>{{ author }}</span>

@@ -1,6 +1,6 @@
 <template>
   <main class="main">
-    <Nuxt />
+    <nuxt />
   </main>
 </template>
 

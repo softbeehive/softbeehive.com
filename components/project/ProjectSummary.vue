@@ -1,22 +1,23 @@
 <template>
   <div>
-    <header class="pb-3">
-      <h3 class="text-2xl font-semibold">{{ project.title }}</h3>
-      <span v-if="project.subtitle">{{ project.subtitle }}</span>
-    </header>
-    <section v-if="project.summary" class="pb-4">
-      <p>{{ project.summary }}</p>
+    <section class="prose">
+      <h2 class="project-name">{{ project.title }}</h2>
+      <span class="font-normal">{{ project.subtitle }}</span>
+      <p v-if="project.summary">{{ project.summary }}</p>
     </section>
-    <section v-if="project.origin" class="pb-4 flex items-center">
+    <p v-if="project.origin" class="flex items-center my-5">
       <BaseIcon name="external-link-alt" class="mr-1" />
-      <a :href="`https://${project.origin}`" target="_blank" rel="noopener">
+      <a
+        :href="`https://${project.origin}`"
+        target="_blank"
+        class="link"
+        :rel="relAttr"
+      >
         Visit website
       </a>
-    </section>
-    <section class="pb-4">
+    </p>
+    <section class="prose mb-5">
       <p>{{ project.softstack }}</p>
-    </section>
-    <section class="pb-4">
       <p>{{ project.chronos }}</p>
     </section>
     <section>
@@ -38,11 +39,27 @@ export default {
       required: true,
     },
   },
+
+  computed: {
+    relAttr() {
+      const values = [
+        'noopener', // https://web.dev/external-anchors-use-rel-noopener/
+      ]
+      if (!this.project.relfollow) values.push('nofollow')
+      return values.join(' ')
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .base-icon {
   fill: theme('colors.links.default');
+}
+
+.prose h2 {
+  &.project-name {
+    @apply mb-0;
+  }
 }
 </style>

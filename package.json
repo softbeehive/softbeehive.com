@@ -1,5 +1,6 @@
 {
   "name": "softbeehive.com",
+  "description": "I build agile web apps. Passionate about programming, graphic design, cybersecurity. Co-founder of valisa.io",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "1.3.0",
     "@nuxtjs/tailwindcss": "2.1.0",
+    "@tailwindcss/typography": "0.2.0",
     "@vue/test-utils": "1.0.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",

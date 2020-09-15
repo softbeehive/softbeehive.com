@@ -1,5 +1,5 @@
 <template>
-  <div class="browser rounded-md overflow-hidden mb-4 lg:mb-auto">
+  <div class="browser rounded-md overflow-hidden mb-5 lg:mb-auto">
     <div class="browser-top flex items-center p-3">
       <ul
         class="browser-controls flex-grow-1 flex-shrink-0 hidden lg:block pr-3"
@@ -21,13 +21,14 @@
     </div>
     <div class="browser-body">
       <picture v-if="project.slug">
-        <source :data-srcset="webpImage.srcSet" :type="mimeType" />
+        <source :data-srcset="webpImage.srcSet" type="image/webp" />
         <source :data-srcset="resizedImage.srcSet" :type="mimeType" />
         <img
           class="w-full lazyload"
           :alt="project.title"
           :width="resizedImage.width"
           :height="resizedImage.height"
+          data-sizes="auto"
           :data-src="originalImage"
           :src="resizedImage.placeholder"
         />
@@ -79,13 +80,17 @@ export default {
     0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
+.browser-top {
+  border-bottom: 1px solid theme('colors.gray.300');
+}
+
 .browser-controls {
   li {
-    display: inline-block;
-    width: theme('width.3');
-    height: theme('height.3');
-    border-radius: 50%;
-    background-color: theme('colors.gray.400');
+    @apply inline-block;
+    @apply w-3;
+    @apply h-3;
+    @apply rounded-full;
+    @apply bg-gray-400;
   }
 }
 </style>
