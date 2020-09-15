@@ -28,6 +28,7 @@
           :alt="project.title"
           :width="resizedImage.width"
           :height="resizedImage.height"
+          data-sizes="auto"
           :data-src="originalImage"
           :src="resizedImage.placeholder"
         />
