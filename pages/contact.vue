@@ -2,8 +2,23 @@
   <div>
     <Hero>Get in touch</Hero>
     <FlexContainer class="flex-col py-5 md:py-8">
-      <article class="">
-        <h2 class="font-bold text-2xl text-gray-900 mb-4">
+      <article>
+        <section class="mb-4">
+          <picture>
+            <source :data-srcset="webpImage.srcSet" type="image/webp" />
+            <source :data-srcset="resizedImage.srcSet" type="image/jpeg" />
+            <img
+              class="lazyload rounded-full w-40 sm:w-48"
+              alt="Oleksandr Bystrikov"
+              data-sizes="auto"
+              width="192"
+              height="192"
+              :data-src="originalImage"
+              :src="resizedImage.placeholder"
+            />
+          </picture>
+        </section>
+        <h2 class="font-bold text-xl text-gray-900 mb-4">
           Oleksandr Bystrikov
         </h2>
         <p class="mb-5 text-gray-700">
@@ -59,6 +74,21 @@ export default {
         },
       ]
       return data
+    },
+
+    webpImage() {
+      const image = require('@/assets/img/pages/oleksandr.jpg?resize&sizes[]=600,sizes[]=400&format=webp')
+      return image
+    },
+
+    resizedImage() {
+      const image = require('@/assets/img/pages/oleksandr.jpg?resize&sizes[]=600,sizes[]=400')
+      return image
+    },
+
+    originalImage() {
+      const image = require('@/assets/img/pages/oleksandr.jpg')
+      return image
     },
   },
 
