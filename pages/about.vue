@@ -10,12 +10,14 @@
         >
           <img
             src="@/assets/img/pages/lighthouse-y.png"
-            alt="Lighthouse results"
+            :alt="imageLabel"
+            :title="imageLabel"
             class="hidden lg:block"
           />
           <img
             src="@/assets/img/pages/lighthouse-x.png"
-            alt="Lighthouse results"
+            :alt="imageLabel"
+            :title="imageLabel"
             class="block lg:hidden"
           />
         </div>
@@ -30,7 +32,7 @@
 </template>
 
 <script>
-import ExperienceCounter from '@/components/tiny/ExperienceCounter'
+import ExperienceCounter from '@/components/tiny/ExperienceCounter' // used by nuxt-content
 
 export default {
   components: {
@@ -46,9 +48,15 @@ export default {
       })
   },
 
+  computed: {
+    imageLabel() {
+      return 'Lighthouse score of softbeehive.com'
+    },
+  },
+
   head() {
-    const title = 'Oleksandr Bystrikov - Lead frontend software engineer'
-    const description = `Software engineering experience: ${this.experienceInYears}+ years. Vue, React, Node, JavaScript. Co-founder of valisa.io`
+    const title = 'About'
+    const description = 'Read the story of my professional development'
     return {
       title,
       meta: [

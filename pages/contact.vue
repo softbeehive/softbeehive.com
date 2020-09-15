@@ -2,11 +2,11 @@
   <div>
     <Hero>Get in touch</Hero>
     <FlexContainer class="flex-col py-5 md:py-8">
-      <article class="prose">
-        <h3 class="font-bold text-lg pb-1">
+      <article class="">
+        <h2 class="font-bold text-2xl text-gray-900 mb-4">
           Oleksandr Bystrikov
-        </h3>
-        <p>
+        </h2>
+        <p class="mb-5 text-gray-700">
           Lead Frontend Developer <br />
           Berlin, Germany
         </p>
@@ -34,7 +34,10 @@
 </template>
 
 <script>
+import experienceMixin from '@/mixins/experienceInYears'
 export default {
+  mixins: [experienceMixin],
+
   computed: {
     items() {
       const data = [
@@ -60,15 +63,15 @@ export default {
   },
 
   head() {
-    const title = 'Contact'
-    const content = 'Get in touch with @softbeehive'
+    const title = 'Oleksandr Bystrikov - Lead frontend software engineer'
+    const description = `Software engineering experience: ${this.experienceInYears}+ years. Vue, React, Node, JavaScript. Co-founder of valisa.io`
     return {
       title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content,
+          content: description,
         },
         {
           hid: 'og:title',
@@ -78,7 +81,7 @@ export default {
         {
           hid: 'og:description',
           name: 'og:description',
-          content,
+          content: description,
         },
       ],
     }

@@ -3,16 +3,9 @@
 </template>
 
 <script>
+import experienceMixin from '@/mixins/experienceInYears'
 export default {
   name: 'ExperienceCounter',
-
-  computed: {
-    experienceInYears() {
-      const start = 2008
-      const currYear = new Date().getFullYear()
-      const diff = parseInt(currYear) - start
-      return diff
-    },
-  },
+  mixins: [experienceMixin],
 }
 </script>
