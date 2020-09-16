@@ -5,7 +5,7 @@
       <span class="font-normal">{{ project.subtitle }}</span>
       <p v-if="project.summary">{{ project.summary }}</p>
     </section>
-    <p v-if="project.origin" class="flex items-center my-5">
+    <p v-if="project.origin" class="flex items-center mt-5">
       <BaseIcon name="external-link-alt" class="mr-1" />
       <a
         :href="`https://${project.origin}`"
@@ -16,7 +16,7 @@
         Visit website
       </a>
     </p>
-    <section class="prose mb-5">
+    <section class="prose my-5">
       <p>{{ project.softstack }}</p>
       <p>{{ project.chronos }}</p>
     </section>

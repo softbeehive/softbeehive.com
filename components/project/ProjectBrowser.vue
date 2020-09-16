@@ -14,9 +14,11 @@
         <BaseIcon
           name="lock"
           size="0.9"
-          class="browser-lock flex-grow-1 flex-shrink-0 text-gray-500 fill-current mr-2"
+          class="browser-lock flex-shrink-0 text-gray-500 fill-current mr-2"
         />
-        <div class="flex-shrink-1">{{ project.origin || 'about:history' }}</div>
+        <div class="flex-auto min-w-0 truncate">
+          {{ project.origin || 'about:history' }}
+        </div>
       </div>
     </div>
     <div class="browser-body">
