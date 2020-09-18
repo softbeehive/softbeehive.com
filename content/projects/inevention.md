@@ -8,4 +8,8 @@ imageExt: "png"
 createdAt: "2013-10-20"
 ---
 
-Long story
+When I started with InEvention, it was under a heavy refactoring. In just a few months, I completely rebuilt UI and optimized user experience on desktop and mobile.
+
+My project tech lead said: "Oleksandr was instrumental to pack a lot of information into a UI that had to be consistent and intuitive."
+
+It even worked in IE8.

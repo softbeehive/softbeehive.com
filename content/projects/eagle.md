@@ -8,4 +8,8 @@ imageExt: "png"
 createdAt: "2013-01-31"
 ---
 
-Long story
+EagleManager had a very intense work pace with a super strict deadline (Scrum). Each team member was tested to the limit.
+
+I worked closely with designers and was responsible for map integration and charts. I mastered new techniques of packing plenty of data into limited space.
+
+Our team delivered a 100% finished project on time.

@@ -9,4 +9,8 @@ imageExt: "png"
 createdAt: "2018-05-31"
 ---
 
-Long story
+I analyzed web app usage and properly configured the browser list. It resulted in a +200% conversion increase in Firefox and iOS Safari.
+
+Actively participated in fraud detection efforts by integrating Stripe + 3D Secure that filtered out all credit card scam.
+
+Reduced production bundle size by enabling tree-shaking, saw 30% faster loading times in Chrome. Mentored developers and maintained open-source projects.

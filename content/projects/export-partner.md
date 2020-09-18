@@ -8,4 +8,6 @@ imageExt: "png"
 createdAt: "2011-07-01"
 ---
 
-Long story
+The graphic design of Export Partner is based upon minimalism, simplicity, and comfortable colors. Strict financial tone conveys the main message: no fancy stuff - just business.
+
+I chose not to utilize custom fonts or gradients: trust, functionality, ease of use. Inspired by finance.ua

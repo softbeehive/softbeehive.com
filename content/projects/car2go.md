@@ -8,4 +8,8 @@ softstack: "Vue, Node, Docker, AWS, Gitlab CI, Cypress, Cross-functional Team, K
 createdAt: "2020-05-15"
 ---
 
-Long story
+I led efforts of gradual codebase transition from legacy Angular to the latest Vue in a cross-functional team. We managed to rewrite (and improve) the whole system piece by piece without taking it down.
+
+I interviewed candidates, mentored, and on-boarded new team members. Furthermore, I represented car2go at tech events in Berlin & Amsterdam.
+
+Summary: it's one of the greatest companies I worked for.

@@ -7,4 +7,8 @@ softstack: "E-commerce, JavaScript, PHP, Shop-Script 5, API Integration, Mobile-
 createdAt: "2015-08-31"
 ---
 
-Long story
+There is no amazon in Ukraine, but competition is fierce. I played a role in shaping the country's e-commerce in the hydroponics segment.
+
+In a nutshell: I designed and developed an online store for a returning customer. In addition to that, I shot professional product photos and managed image post-processing.
+
+To simplify store manager work, I created the delivery integration plugin for Nova Poshta API (popular logistics company). Provided training, maintained infrastructure, and helped with content.
