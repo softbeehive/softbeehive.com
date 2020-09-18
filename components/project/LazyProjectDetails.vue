@@ -5,12 +5,12 @@
         <h3>About</h3>
         <p>{{ project.chronos }}</p>
         <p>{{ project.summary }}</p>
-        <h3>Skill Stack</h3>
+        <h3>Skill stack</h3>
         <p>{{ project.softstack }}</p>
       </section>
       <section class="w-full lg:w-1/2 px-4">
         <div class="prose">
-          <h3>Impact</h3>
+          <h3>Story</h3>
           <nuxt-content :id="project.slug" class="prose" :document="project" />
         </div>
         <div v-if="project.origin" class="flex items-center mt-5">

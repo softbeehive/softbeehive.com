@@ -1,5 +1,5 @@
 <template>
-  <div class="hero py-10 sm:py-12 md:py-16">
+  <div class="hero py-10 sm:py-12">
     <FlexContainer
       class="flex-col justify-center items-center text-center text-white"
     >

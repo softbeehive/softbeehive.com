@@ -8,4 +8,6 @@ relfollow: true
 createdAt: "2013-11-01"
 ---
 
-Long story
+In creative work, I always look for a symbol. I can't just make a random thing. For me finding an excellent name is quite a challenge. This time I called it _buk_ – a beech tree.
+
+Buk board offers four ways to navigate slides: arrow keys, hamburger menu, icon arrows, counter input.

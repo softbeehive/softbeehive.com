@@ -6,4 +6,8 @@ softstack: "Zend Framework 2, PHP, JavaScript, jQuery, Twitter Bootstrap 3, Sass
 createdAt: "2014-04-15"
 ---
 
-Long story
+I created a new version of the corporate website for a longtime customer. In dialogue with the client, I picked a color scheme, branding, fonts, stock photographs. 
+
+Due to the explosive growth of Android & iOS, responsive mobile-first layout was the best choice.
+
+Simple architecture and modern tools are a solid basis for a swift, minimalistic, up-to-date website. It ran on Ubuntu Server at DigitalOcean.

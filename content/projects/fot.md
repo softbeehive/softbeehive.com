@@ -8,5 +8,9 @@ relfollow: true
 createdAt: "2014-03-08"
 ---
 
-Long story
+It was a technical challenge at EF. In 2014 I wanted to commemorate fallen sailors of WWI.
+
+Flickr Ocean Trawler dedicated to British naval trawlers and their crew sweeping the sea for mines. I created drawings using Intuos 5 pen tablet.
+
+SPA passes a query - backend gets results from Flickr API - results processed and saved in MySQL - backend renders a view - SPA gets HTML partial and adds it to DOM.
 

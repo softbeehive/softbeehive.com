@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero>Get in touch</Hero>
-    <FlexContainer class="flex-col py-5 md:py-8">
+    <FlexContainer class="flex-col py-8">
       <article>
         <section class="mb-4">
           <picture>

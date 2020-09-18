@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero>I build robust web apps</Hero>
-    <FlexContainer class="flex-col py-5 md:py-8">
+    <FlexContainer class="flex-col py-8">
       <LazyProjectCompact
         v-for="(project, i) in projects"
         :key="project + i"

@@ -14,9 +14,11 @@
         <BaseIcon
           name="lock"
           size="0.9"
-          class="browser-lock flex-grow-1 flex-shrink-0 text-gray-500 fill-current mr-2"
+          class="browser-lock flex-shrink-0 text-gray-500 fill-current mr-2"
         />
-        <div class="flex-shrink-1">{{ project.origin || 'about:history' }}</div>
+        <div class="flex-auto min-w-0 truncate">
+          {{ project.origin || 'about:history' }}
+        </div>
       </div>
     </div>
     <div class="browser-body">
@@ -76,7 +78,7 @@ export default {
 
 <style lang="scss" scoped>
 .browser {
-  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.1),
+  box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.06), 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
 }
 

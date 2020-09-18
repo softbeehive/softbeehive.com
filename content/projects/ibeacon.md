@@ -9,4 +9,8 @@ imageExt: "png"
 createdAt: "2017-03-01"
 ---
 
-Long story
+I worked in a small feature-team building beacon management platform using Angular. It provided me with an excellent chance to learn about Bluetooth and iBeacon protocol.
+
+I followed DRY principle, significantly improving the project's health, documented features, practiced continuous deployment.
+
+In tandem with my colleague, I created and maintained a compact end-to-end testing framework based on Protractor.

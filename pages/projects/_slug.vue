@@ -6,7 +6,7 @@
         <p class="text-lg">{{ project.subtitle }}</p>
       </template>
     </Hero>
-    <FlexContainer class="flex-col py-5 md:py-8">
+    <FlexContainer class="flex-col py-8">
       <LazyProjectDetails :project="project" />
     </FlexContainer>
   </div>
