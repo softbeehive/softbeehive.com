@@ -3,7 +3,6 @@ import tailwindConfig from './tailwind.config.js'
 const fullTailwindConfig = resolveConfig(tailwindConfig)
 
 export default {
-  ssr: false,
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
