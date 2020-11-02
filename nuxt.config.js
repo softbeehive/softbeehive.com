@@ -111,4 +111,6 @@ export default {
   pwa: {
     icon: true,
   },
+  // Turn off telemetry
+  telemetry: false,
 }
