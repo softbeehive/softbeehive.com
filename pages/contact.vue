@@ -53,6 +53,31 @@ import experienceMixin from '@/mixins/experienceInYears'
 export default {
   mixins: [experienceMixin],
 
+  head() {
+    const title = 'Oleksandr Bystrikov - Lead frontend software engineer'
+    const description = `Software engineering experience: ${this.experienceInYears}+ years. Vue, React, Node, JavaScript. Co-founder of valisa.io`
+    return {
+      title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: description,
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: title,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: description,
+        },
+      ],
+    }
+  },
+
   computed: {
     items() {
       const data = [
@@ -90,31 +115,6 @@ export default {
       const image = require('@/assets/img/pages/oleksandr.jpg')
       return image
     },
-  },
-
-  head() {
-    const title = 'Oleksandr Bystrikov - Lead frontend software engineer'
-    const description = `Software engineering experience: ${this.experienceInYears}+ years. Vue, React, Node, JavaScript. Co-founder of valisa.io`
-    return {
-      title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: description,
-        },
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: title,
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: description,
-        },
-      ],
-    }
   },
 }
 </script>

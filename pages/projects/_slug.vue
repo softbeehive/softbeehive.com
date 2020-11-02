@@ -2,7 +2,7 @@
   <div class="project">
     <Hero>
       {{ project.title }}
-      <template v-slot:subtitle>
+      <template #subtitle>
         <p class="text-lg">{{ project.subtitle }}</p>
       </template>
     </Hero>

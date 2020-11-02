@@ -48,12 +48,6 @@ export default {
       })
   },
 
-  computed: {
-    imageLabel() {
-      return 'Lighthouse score of softbeehive.com'
-    },
-  },
-
   head() {
     const title = 'About'
     const description = 'Read the story of my professional development'
@@ -77,6 +71,12 @@ export default {
         },
       ],
     }
+  },
+
+  computed: {
+    imageLabel() {
+      return 'Lighthouse score of softbeehive.com'
+    },
   },
 }
 </script>

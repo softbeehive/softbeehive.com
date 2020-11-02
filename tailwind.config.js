@@ -19,9 +19,9 @@ module.exports = {
           hover: '#1a4c92',
         },
         cta: {
-          '100': '#cedff6',
-          '200': '#adc9f1',
-          '300': '#8cb4eb',
+          100: '#cedff6',
+          200: '#adc9f1',
+          300: '#8cb4eb',
         },
       },
     },
