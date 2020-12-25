@@ -12,7 +12,6 @@
 		"editor.codeActionsOnSave": {
 			"source.fixAll.eslint": true
 		},
-		"eslint.enable": true,
 		"eslint.alwaysShowStatus": true,
 		"eslint.validate": [
 			"javascript",
