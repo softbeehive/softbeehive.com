@@ -93,10 +93,6 @@ export default {
           name: 'linkedin',
           link: 'https://de.linkedin.com/in/bystrikov',
         },
-        {
-          name: 'telegram',
-          link: 'https://t.me/softbeehive',
-        },
       ]
       return data
     },
