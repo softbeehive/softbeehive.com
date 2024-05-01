@@ -86,10 +86,6 @@ export default {
           link: 'https://github.com/softbeehive',
         },
         {
-          name: 'twitter',
-          link: 'https://twitter.com/softbeehive',
-        },
-        {
           name: 'linkedin',
           link: 'https://de.linkedin.com/in/bystrikov',
         },
